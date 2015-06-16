@@ -1,0 +1,2595 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// German (Germany) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_DEU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_BACK MENU 
+BEGIN
+    POPUP "BACK"
+    BEGIN
+        MENUITEM "&Zurück",                     ID_BACK_SETBACK
+        MENUITEM "&Leises zurück",              ID_BACK_SETSI8LENTBACK
+    END
+END
+
+IDR_BROWSE MENU 
+BEGIN
+    POPUP "BROWSE"
+    BEGIN
+        MENUITEM "Datei&pfad kopieren",         ID_BROWSE_COPYFILEPATH
+        MENUITEM "Dateinamen &kopieren",        ID_BROWSE_COPYFILENAME
+        MENUITEM "&Dateiinformationen kopieren", 
+                                                ID_BROWSE_COPYFILEINFORMATION
+
+    END
+END
+
+IDR_CHANNEL MENU 
+BEGIN
+    POPUP "&RoboMX"
+    BEGIN
+        MENUITEM "&Neuen Raum betreten\tStrg+N", ID_MYFILE_NEW
+        MENUITEM "&Raumlist\tStrg+L",           ID_CHANNEL_CHANNELLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Neu verbinden\tStrg+R",      ID_RECONNECT
+        MENUITEM "Alle neu verbinden",          ID_RECONNECT_ALL
+        MENUITEM "Raum &verlassen",             ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&WPN-Verbindung auf-/abbauen", ID_WPN_STATUS
+        MENUITEM "WPN &neu verbinden",          ID_WPN_REFRESH
+        MENUITEM "&Benutzer umbenennen",        ID_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Chat"
+    BEGIN
+        MENUITEM "&Logdatei ansehen",           ID_VIEW_LOGFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Auto&matisch verbinden",      ID_CHATROOM_ADDTOAUTOJOIN
+        MENUITEM SEPARATOR
+        MENUITEM "Th&ema anzeigen",             ID_CHATROOM_VIEWTOPIC
+        MENUITEM "Ver&bannete Benutzer zeigen", ID_CHATROOM_VIEWCURRENTBANS
+        MENUITEM SEPARATOR
+        POPUP "&Im Raum anzeigen"
+        BEGIN
+            MENUITEM "Winamp Lied\tF8",             ID_CHATROOM_DISPLAYINCHANNEL_WINAMPSONG
+
+            MENUITEM SEPARATOR
+            MENUITEM "Geschätzte Zeitdifferenz\tF4", 
+                                                    ID_CHATROOM_DISPLAYINCHANNEL_AVERAGELAG
+
+            MENUITEM "&Ping\tF5",                   ID_DISPLAYINCHANNEL_PING
+            MENUITEM "&Quasselmeter\tF6",           ID_DISPLAYINCHANNEL_LURKMETER
+
+            MENUITEM "Statistik\tF7",               ID_DISPLAYINCHANNEL_STATISTICS
+
+            MENUITEM "&Online Zeit\tF9",            ID_DISPLAYINCHANNEL_ONLINETIME
+
+            MENUITEM SEPARATOR
+            MENUITEM "Zeit seit letztem Systemstart\tF2", 
+                                                    ID_CHATROOM_DISPLAYINCHANNEL_SYSTEMUPTIME
+
+            MENUITEM "System Info\tF3",             ID_CHATROOM_DISPLAYINCHANNEL_SYSTEMINFO
+
+            MENUITEM "Erw. System Info\tF10",       ID_DISPLAYINCHANNEL_EXTENDEDSYSTEMINFO
+
+        END
+        POPUP "&Text Tricks"
+        BEGIN
+            MENUITEM "Hacker",                      ID_CHATROOM_TEXTTRICKS_HACKER
+
+            MENUITEM "Blasen",                      ID_CHATROOM_TEXTTRICKS_BUBBLES
+
+            MENUITEM "Blöcke",                      ID_CHATROOM_TEXTTRICKS_BOX
+
+            MENUITEM "3D Knöpfe (Normal)",          ID_CHAT_TEXTTRICKS_3DBUTTONSNORMAL
+
+            MENUITEM "3D Knöpfe (Aktion)",          ID_CHAT_TEXTTRICKS_3DBUTTONSACTION
+
+            MENUITEM SEPARATOR
+            MENUITEM "3D Knöpfe (Farbig)",          ID_TEXTTRICKS_3DBUTTONS
+            MENUITEM "Wilde Farben",                ID_TEXTTRICKS_WILDCOLORS
+            MENUITEM SEPARATOR
+            MENUITEM "ASCII Kunst Designer",        ID_CHATROOM_ASCIIARTDESIGN
+
+        END
+        MENUITEM "Raum &Statistiken",           ID_CHAT_CHANNELSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "Kopiere &Raumnamen",          ID_CHATROOM_COPYROOMNAME
+        MENUITEM SEPARATOR
+        MENUITEM "Chatsounds &stummschalten",   ID_MUTE
+        MENUITEM "Fensterinhalt &löschen",      ID_CHATROOM_CLEARSCREEN
+    END
+    POPUP "&Benutzer"
+    BEGIN
+        MENUITEM "&Nachricht schicken",         ID_USERLIST_SENDMESSAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Durchsuchen",                ID_USER_BROWSE
+        MENUITEM "&Whois",                      ID_USERLIST_WHOIS
+        MENUITEM SEPARATOR
+        MENUITEM "&Ignorieren",                 ID_USERLIST_IGNORE
+        MENUITEM "&Ignorieren aufheben",        ID_USERLIST_UNIGNORE
+        MENUITEM "&Vertrauen",                  ID_ADVANCED_TRUSTUSER
+        MENUITEM "Misstrauen",                  ID_ADVANCED_REMOVETRUSTED
+        MENUITEM SEPARATOR
+        MENUITEM "&Benutzernamen kopieren",     ID_USERLIST_COPYUSERNAME
+        POPUP "&Erweitert"
+        BEGIN
+            MENUITEM "&Verleihe Adminrechte",       ID_USERLIST_ADDADMIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Entziehe Adminrechte",       ID_USERLIST_REMOVEADMIN
+            MENUITEM "&Rauswerfen",                 ID_USERLIST_KICK
+            MENUITEM "&Verbannen",                  ID_USERLIST_BAN
+            MENUITEM "Rauswerfen & Verbannen",      ID_USERLIST_KICKBAN
+            MENUITEM "Verbannung aufheben",         ID_USERLIST_UNBAN
+            MENUITEM SEPARATOR
+            MENUITEM "Zeige Benutzerstatistik",     ID_USERLIST_PRINTUSERSTAT
+
+            MENUITEM "Zeige &IP",                   ID_USERLIST_PRINTIP
+            MENUITEM "Nachricht lesen",             ID_USERLIST_READUSERMESSAGE
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Menü anpassen",               ID_USERLIST_CUSTOMIZETHISMENU
+
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "Vollbild",                    ID_VIEW_FULL_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "System &Konsole",             ID_VIEW_SYSTEMCONSOLE
+        POPUP "&Benutzerliste"
+        BEGIN
+            MENUITEM "&Detailiert",                 ID_USERLIST_DETAILEDVIEW
+            MENUITEM "&Kurz",                       ID_USERLIST_SHORTVIEW
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Raumleiste",                 ID_VIEW_CHANNELBAR
+        MENUITEM "&Werkzeugleiste",             ID_VIEW_TOOLBAR
+        MENUITEM "&Statuszeile",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Ignorierte Benutzer",        ID_VIEW_IGNOREDUSERS
+        MENUITEM "&Freunde",                    ID_VIEW_TRUSTEDUSERS
+        MENUITEM "Raum&verwaltung",             ID_VIEW_AUTOJOINMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "&Einstellungen",              ID_VIEW_OPTIONS
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Nächstes",                   ID_CTRLTAB
+        MENUITEM SEPARATOR
+        MENUITEM "&Überlappend",                ID_WINDOW_CASCADE
+        MENUITEM "&Nebeneinander",              ID_WINDOW_TILE_HORZ
+        MENUITEM "&Übereinander",               ID_WINDOW_ARRANGE
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Homepage besuchen",          ID_HELP_VISITHOMEPAGE
+        MENUITEM "&Forum",                      ID_HELP_VISITONLINEFORUM
+        MENUITEM "Mailingliste",                ID_HELP_SUBSCRIBETOMAILINGLIST
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Change-Log",                 ID_HELP_CHANGELOG
+        MENUITEM "&Linzenz",                    ID_HELP_LINCENSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Über RoboMX...",             ID_APP_ABOUT
+    END
+END
+
+IDR_DOCMENU MENU 
+BEGIN
+    POPUP "DOCMENU"
+    BEGIN
+        MENUITEM "&Aktivieren",                 ID_DOCMENU_ACTIVATE
+        MENUITEM "&Schließen",                  ID_DOCMENU_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Nach &Links",                 ID_DOCMENU_MOVELEFT
+        MENUITEM "Nach &Rechts",                ID_DOCMENU_MOVERIGHT
+        MENUITEM SEPARATOR
+        MENUITEM "&Raumbild wählen",            ID_DOCMENU_SETCHANNELPICTURE
+    END
+END
+
+IDR_CHAT MENU 
+BEGIN
+    POPUP "Chatraum"
+    BEGIN
+        MENUITEM "&Logdatei ansehen",           ID_VIEW_LOGFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Neu verbinden",               ID_CHATROOM_REJOIN
+        MENUITEM "Automatisch verbinden",       ID_CHATROOM_ADDTOAUTOJOIN
+        MENUITEM SEPARATOR
+        MENUITEM "Thema zeigen",                ID_CHATROOM_VIEWTOPIC
+        MENUITEM "Verbannungen zeigen",         ID_CHATROOM_VIEWCURRENTBANS
+        MENUITEM SEPARATOR
+        POPUP "&Im Raum anzeigen"
+        BEGIN
+            MENUITEM "Winamp Lied\tF8",             ID_CHATROOM_DISPLAYINCHANNEL_WINAMPSONG
+
+            MENUITEM SEPARATOR
+            MENUITEM "Geschätzte Zeitdifferenz\tF4", 
+                                                    ID_CHATROOM_DISPLAYINCHANNEL_AVERAGELAG
+
+            MENUITEM "&Ping\tF5",                   ID_DISPLAYINCHANNEL_PING
+            MENUITEM "&Quasselmeter\tF6",           ID_DISPLAYINCHANNEL_LURKMETER
+
+            MENUITEM "Statistik\tF7",               ID_DISPLAYINCHANNEL_STATISTICS
+
+            MENUITEM "&Online Zeit\tF9",            ID_DISPLAYINCHANNEL_ONLINETIME
+
+            MENUITEM SEPARATOR
+            MENUITEM "Zeit seit letztem Neustart\tF2", 
+                                                    ID_CHATROOM_DISPLAYINCHANNEL_SYSTEMUPTIME
+
+            MENUITEM "System Info\tF3",             ID_CHATROOM_DISPLAYINCHANNEL_SYSTEMINFO
+
+            MENUITEM "Erw. System Info\tF10",       ID_DISPLAYINCHANNEL_EXTENDEDSYSTEMINFO
+
+        END
+        POPUP "&Text Tricks"
+        BEGIN
+            MENUITEM "Hacker",                      ID_CHATROOM_TEXTTRICKS_HACKER
+
+            MENUITEM "lasen",                       ID_CHATROOM_TEXTTRICKS_BUBBLES
+
+            MENUITEM "Blöcke",                      ID_CHATROOM_TEXTTRICKS_BOX
+
+            MENUITEM "3D Knöpfe (Normal)",          ID_CHAT_TEXTTRICKS_3DBUTTONSNORMAL
+
+            MENUITEM "3D Knöpfe (Aktion)",          ID_CHAT_TEXTTRICKS_3DBUTTONSACTION
+
+            MENUITEM SEPARATOR
+            MENUITEM "3D Knöpfe (Farbig)",          ID_TEXTTRICKS_3DBUTTONS
+            MENUITEM "&Wilde Farben",               ID_TEXTTRICKS_WILDCOLORS
+            MENUITEM SEPARATOR
+            MENUITEM "ASCII Kunst Designer",        ID_CHATROOM_ASCIIARTDESIGN
+
+        END
+        MENUITEM "&Abwesenheit",                IDM_AWAY
+        MENUITEM "Raum &Statistik",             ID_CHAT_CHANNELSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "Kopiere &Raumnamen",          ID_CHATROOM_COPYROOMNAME
+        MENUITEM SEPARATOR
+        MENUITEM "Fensterinhalt löschen",       ID_CHATROOM_CLEARSCREEN
+    END
+END
+
+IDR_LIST MENU 
+BEGIN
+    POPUP "&RoboMX"
+    BEGIN
+        MENUITEM "&Neuen Raum betreten\ttStrg+N", ID_MYFILE_NEW
+        MENUITEM "&Raum betreten",              ID_POPUP_LOOPBACKJOIN
+        MENUITEM "Raum&liste\tStrg+L",          ID_CHANNEL_CHANNELLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Schließe Raumliste",         ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "WPN Verbindung auf-/abbauen", ID_WPN_STATUS
+        MENUITEM "&WPN neu verbinden",          ID_WPN_REFRESH
+        MENUITEM "Benutzer &umbenennen",        ID_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Räume"
+    BEGIN
+        MENUITEM "&Neuladen",                   ID_LIST_RELOADLIST
+        MENUITEM "&Aktualisieren",              ID_LIST_UPDATELIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Statistik",                  ID_LIST_SHOWSTATISTICS
+        MENUITEM "Kop&iere Statistik",          ID_LIST_COPYSTATISTICS
+        MENUITEM SEPARATOR
+        MENUITEM "&Fokus auf Auswahl fixieren", ID_LIST_LOCKFOCUSONSELECTION
+        , CHECKED
+        MENUITEM "&Filter",                     ID_CHANNELS_FILTER, CHECKED
+        MENUITEM "Filter anpassen",             ID_CHANNELS_EDITFILTER
+        MENUITEM SEPARATOR
+        MENUITEM "&Hervorhebung",               ID_LIST_HIGHLIGHT, CHECKED
+        MENUITEM "&Schlüßelworte anpassen",     ID_LIST_EDITHIGHLIGHTKEYWORDS
+
+        MENUITEM SEPARATOR
+        MENUITEM "Raumliste zwischenspeichern", ID_CONFIGURECACHING_CACHEROOMLIST
+        , CHECKED
+        MENUITEM "Nur Favoriten speichern",     ID_LIST_CACHEONLYFAVORITES
+        , CHECKED
+        MENUITEM "Zwischenspeicher löschen",    ID_ADVANCED_CLEARCACHEDROOMS
+        POPUP "&Erweitert"
+        BEGIN
+            MENUITEM "Raum manuell hinzufügen",     ID_ADVANCED_MANUALLYADDROOMTOCACHE
+
+            MENUITEM "Aus Zwischenspeicher löschen\tUmst.+Entf", 
+                                                    ID_ADVANCED_REMOVEFROMCACHE
+
+            MENUITEM "Raum auf 'aktiv' setzen",     ID_ADVANCED_REMOVECACHEDFLAG
+
+        END
+    END
+    POPUP "&Favoriten"
+    BEGIN
+        MENUITEM "&Favoriten oben gruppieren",  ID_LIST_GROUPFAVORITESATTOPOFLIST
+        , CHECKED
+        MENUITEM "&Zu Favoriten hinzufügen",    ID_LIST_ADDTOFAVORITES
+        MENUITEM "Eintrag bearbeiten",          ID_POPUP_EDITFAVORITEENTRY
+        MENUITEM "Aus Favoriten &löschen",      ID_LIST_REMOVEFROMFAVORITES
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Vollbild",                   ID_VIEW_FULL_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Raumleiste",                 ID_VIEW_CHANNELBAR
+        MENUITEM "&Werkzeugleiste",             ID_VIEW_TOOLBAR
+        MENUITEM "&Statuszeile",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Ignorierte Benutzer",        ID_VIEW_IGNOREDUSERS
+        MENUITEM "&Freunde",                    ID_VIEW_TRUSTEDUSERS
+        MENUITEM "Raumverwaltung",              ID_VIEW_AUTOJOINMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "&Einstellungen",              ID_VIEW_OPTIONS
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Nächstes",                   ID_CTRLTAB
+        MENUITEM SEPARATOR
+        MENUITEM "&Überlappend",                ID_WINDOW_CASCADE
+        MENUITEM "&Nebeneinander",              ID_WINDOW_TILE_HORZ
+        MENUITEM "&Untereinander",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Homepage besuchen",          ID_HELP_VISITHOMEPAGE
+        MENUITEM "&Forum",                      ID_HELP_VISITONLINEFORUM
+        MENUITEM "Mailingliste",                ID_HELP_SUBSCRIBETOMAILINGLIST
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Change-Log",                 ID_HELP_CHANGELOG
+        MENUITEM "&Linzenz",                    ID_HELP_LINCENSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Über RoboMX...",             ID_APP_ABOUT
+    END
+END
+
+IDR_LISTRMENU MENU 
+BEGIN
+    POPUP "POPUP"
+    BEGIN
+        MENUITEM "Betreten",                    ID_POPUP_LOOPBACKJOIN
+        MENUITEM "Betreten (mit Optionen)",     ID_MYFILE_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "Kopiere Raumnamen",           ID_POPUP_COPYROOMNAME
+        MENUITEM "Kopiere Thema",               ID_POPUP_COPYTOPIC
+        MENUITEM SEPARATOR
+        POPUP "&Erweitert"
+        BEGIN
+            MENUITEM "&Ping",                       ID_POPUP_PINGROOM
+            MENUITEM SEPARATOR
+            MENUITEM "Aus Zwischenspeicher löschen", 
+                                                    ID_ADVANCED_REMOVEFROMCACHE
+
+            MENUITEM "auf 'aktiv' setzen",          ID_ADVANCED_REMOVECACHEDFLAG
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Zu Favoriten hinzufügen",    ID_LIST_ADDTOFAVORITES
+        MENUITEM "Eintrag bearbeiten",          ID_POPUP_EDITFAVORITEENTRY
+        MENUITEM "Aus Favoriten &löschen",      ID_LIST_REMOVEFROMFAVORITES
+    END
+END
+
+IDR_MESSAGEVIEW_TMPL MENU 
+BEGIN
+    POPUP "&RoboMX"
+    BEGIN
+        MENUITEM "&Neuen Raum betreten\tStrg+N", ID_MYFILE_NEW
+        MENUITEM "Raum&liste\tStrg+L",          ID_ACTIONS_SETAWAYMESSAGE
+        MENUITEM SEPARATOR
+        MENUITEM "&Schließen",                  ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "WPN Verbindung auf-/abbauen", ID_WPN_STATUS
+        MENUITEM "WPN neu verbinden",           ID_WPN_REFRESH
+        MENUITEM "Benutzer &umbennnen",         ID_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Benutzer"
+    BEGIN
+        MENUITEM "&Durchsuchen",                ID_USER_BROWSE
+        MENUITEM "&Ignorieren",                 ID_ACTIONS_IGNOREUSER
+        MENUITEM "&Vertrauen",                  ID_ACTIONS_TRUSTUSER
+    END
+    POPUP "&Nachricht"
+    BEGIN
+        MENUITEM "&Abwesenheits Nachricht",     ID_ACTIONS_SETAWAYMESSAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Winamp Lied\tF8",             32817
+        MENUITEM SEPARATOR
+        MENUITEM "&Online Zeit\tF9",            32932
+        MENUITEM SEPARATOR
+        MENUITEM "Zeit seit letztem Neustart\tF2", 32816
+        MENUITEM "System Info\tF3",             32815
+        MENUITEM "Erw. System Info\tF10",       32917
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Vollbild",                   ID_VIEW_FULL_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Raumleiste",                 ID_VIEW_CHANNELBAR
+        MENUITEM "&Werkzeugleiste",             ID_VIEW_TOOLBAR
+        MENUITEM "&Statuszeile",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Ignorierte Benutzer",        ID_VIEW_IGNOREDUSERS
+        MENUITEM "&Freunde",                    ID_VIEW_TRUSTEDUSERS
+        MENUITEM "Raumverwaltung",              ID_VIEW_AUTOJOINMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "&Einstellungen",              ID_VIEW_OPTIONS
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Nächstes",                   ID_CTRLTAB
+        MENUITEM SEPARATOR
+        MENUITEM "&Überlappend",                ID_WINDOW_CASCADE
+        MENUITEM "&Nebeneinander",              ID_WINDOW_TILE_HORZ
+        MENUITEM "&Untereinander",              ID_WINDOW_ARRANGE
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Homepage besuchen",          ID_HELP_VISITHOMEPAGE
+        MENUITEM "&Forum",                      ID_HELP_VISITONLINEFORUM
+        MENUITEM "Mailingliste",                ID_HELP_SUBSCRIBETOMAILINGLIST
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Change-Log",                 ID_HELP_CHANGELOG
+        MENUITEM "&Linzenz",                    ID_HELP_LINCENSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Über RoboMX...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&RoboMX"
+    BEGIN
+        MENUITEM "&Neuen Raum betreten\tStrg+N", ID_MYFILE_NEW
+        MENUITEM "Raum&liste\tStrg+L",          ID_CHANNEL_CHANNELLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&WPN Verbindung auf-/abbauen", ID_WPN_STATUS
+        MENUITEM "WPN neu verbinden",           ID_WPN_REFRESH
+        MENUITEM "Benutzer &umbenennen",        ID_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Vollbild",                   ID_VIEW_FULL_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Raumleiste",                 ID_VIEW_CHANNELBAR
+        MENUITEM "&Werkzeugleiste",             ID_VIEW_TOOLBAR
+        MENUITEM "&Statuszeile",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Ignorierte Benutzer",        ID_VIEW_IGNOREDUSERS
+        MENUITEM "&Freunde",                    ID_VIEW_TRUSTEDUSERS
+        MENUITEM "Raumverwaltung",              ID_VIEW_AUTOJOINMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "&Einstellungen",              ID_VIEW_OPTIONS
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Homepage besuchen",          ID_HELP_VISITHOMEPAGE
+        MENUITEM "&Forum",                      ID_HELP_VISITONLINEFORUM
+        MENUITEM "Mailingliste",                ID_HELP_SUBSCRIBETOMAILINGLIST
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Change-Log",                 ID_HELP_CHANGELOG
+        MENUITEM "&Linzenz",                    ID_HELP_LINCENSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Über RoboMX...",             ID_APP_ABOUT
+    END
+END
+
+IDR_PMMENU MENU 
+BEGIN
+    POPUP "PM"
+    BEGIN
+        MENUITEM "&Durchsuchen",                32876
+        MENUITEM "&Ignorieren",                 32774
+        MENUITEM "&Vertrauen",                  32906
+    END
+END
+
+IDR_SETTINGS MENU 
+BEGIN
+    POPUP "&RoboMX"
+    BEGIN
+        MENUITEM "&Neuen Raum betreten\tStrg+N", ID_MYFILE_NEW
+        MENUITEM "Raum&liste\tStrg+L",          ID_CHANNEL_CHANNELLIST
+        MENUITEM SEPARATOR
+        MENUITEM "Benutzer &umbennen",          ID_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "Vollbild",                    ID_VIEW_FULL_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Raumleiste",                 ID_VIEW_CHANNELBAR
+        MENUITEM "&Werkzeugleiste",             ID_VIEW_TOOLBAR
+        MENUITEM "&Statuszeile",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Ignorierte Benutzer",        ID_VIEW_IGNOREDUSERS
+        MENUITEM "&Freunde",                    ID_VIEW_TRUSTEDUSERS
+        MENUITEM "Raum&verwaltung",             ID_VIEW_AUTOJOINMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "&Einstellungen",              ID_VIEW_OPTIONS
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Nächstes",                   ID_CTRLTAB
+        MENUITEM SEPARATOR
+        MENUITEM "&Überlappend",                ID_WINDOW_CASCADE
+        MENUITEM "&Nebeneinander",              ID_WINDOW_TILE_HORZ
+        MENUITEM "&Übereinander",               ID_WINDOW_ARRANGE
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Homepage besuchen",          ID_HELP_VISITHOMEPAGE
+        MENUITEM "&Forum",                      ID_HELP_VISITONLINEFORUM
+        MENUITEM "Mailingliste",                ID_HELP_SUBSCRIBETOMAILINGLIST
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Change-Log",                 ID_HELP_CHANGELOG
+        MENUITEM "&Linzenz",                    ID_HELP_LINCENSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Über RoboMX...",             ID_APP_ABOUT
+    END
+END
+
+IDR_SYSTRAY MENU 
+BEGIN
+    POPUP "SYSTRAY"
+    BEGIN
+        MENUITEM "&Wiederherstellen",           ID_SYSTRAY_RESTORE
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+END
+
+IDR_URL MENU 
+BEGIN
+    POPUP "URL"
+    BEGIN
+        MENUITEM "Im Standardbrowser öfnnen",   ID_OPEN_OPEN
+        MENUITEM "Im Internet Explorer öffnen", ID_OPEN_OPENINNEWBROWSER
+        MENUITEM SEPARATOR
+        MENUITEM "&Kopiere Link-Addresse",      ID_COPY_ADDRESS
+    END
+END
+
+IDR_USER MENU 
+BEGIN
+    POPUP "Benutzerliste"
+    BEGIN
+        MENUITEM "Nachricht schicken",          ID_USERLIST_SENDMESSAGE
+        MENUITEM SEPARATOR
+        MENUITEM "Durchsuchen",                 ID_USER_BROWSE
+        MENUITEM "&Whois",                      ID_USERLIST_WHOIS
+        MENUITEM SEPARATOR
+        MENUITEM "Namen kopieren",              ID_USERLIST_COPYUSERNAME
+        MENUITEM SEPARATOR
+        MENUITEM "I&gnorieren",                 ID_USERLIST_IGNORE
+        MENUITEM "Ignorieren aufheben",         ID_USERLIST_UNIGNORE
+        MENUITEM "Vertrauen",                   ID_ADVANCED_TRUSTUSER
+        MENUITEM "Misstrauen",                  ID_ADVANCED_REMOVETRUSTED
+        MENUITEM SEPARATOR
+        POPUP "&Erweitert"
+        BEGIN
+            MENUITEM "&Verleihe Adminrechte",       ID_USERLIST_ADDADMIN
+            MENUITEM "&Entziehe Adminrechte",       ID_USERLIST_REMOVEADMIN
+            MENUITEM SEPARATOR
+            MENUITEM "&Rauswerfen",                 ID_USERLIST_KICK
+            MENUITEM "&Verbannen",                  ID_USERLIST_BAN
+            MENUITEM "Verbannnen und rauswerfen",   ID_USERLIST_KICKBAN
+            MENUITEM "Verbannung aufheben",         ID_USERLIST_UNBAN
+            MENUITEM "Umleiten",                    ID_USERLIST_REDIRECT
+            MENUITEM SEPARATOR
+            MENUITEM "Statistik",                   ID_USERLIST_PRINTUSERSTAT
+
+            MENUITEM "Zeige &IP",                   ID_USERLIST_PRINTIP
+            MENUITEM "Zeige Nachricht",             ID_USERLIST_READUSERMESSAGE
+
+            MENUITEM SEPARATOR
+            MENUITEM "Bild wählen",                 ID_ADVANCED_SETPICTURE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Eigene Befehle",             ID_USERLIST_CUSTOMCOMMANDS
+        MENUITEM SEPARATOR
+        MENUITEM "Menü anpassen",               ID_USERLIST_CUSTOMIZETHISMENU
+
+    END
+END
+
+IDR_BROWSEVIEW_TMPL MENU 
+BEGIN
+    POPUP "&RoboMX"
+    BEGIN
+        MENUITEM "&Neuen Raum betreten\tStrg+N", ID_MYFILE_NEW
+        MENUITEM "Raum&liste\tStrg+L",          ID_CHANNEL_CHANNELLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Schließen",                  ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&WPN Verbindung auf-/abbauen", ID_WPN_STATUS
+        MENUITEM "WPN neu &verbinden",          ID_WPN_REFRESH
+        MENUITEM "Benutzer &umbennen",          ID_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                    ID_APP_EXIT
+    END
+    POPUP "&Benutzer"
+    BEGIN
+        MENUITEM "&Dateien neuladen",           ID_ACTIONS_RELOADFILES
+        MENUITEM "&Nachricht schicken",         ID_ACTIONS_SENDPRIVATEMESSAGE
+
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "Vollbild",                    ID_VIEW_FULL_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Raumleiste",                 ID_VIEW_CHANNELBAR
+        MENUITEM "&Werkzeugleiste",             ID_VIEW_TOOLBAR
+        MENUITEM "&Statuszeile",                ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Ignorierte Benutzer",        ID_VIEW_IGNOREDUSERS
+        MENUITEM "&Freunde",                    ID_VIEW_TRUSTEDUSERS
+        MENUITEM "Raum&verwaltung",             ID_VIEW_AUTOJOINMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "&Einstellungen",              ID_VIEW_OPTIONS
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Nächstes",                   ID_CTRLTAB
+        MENUITEM SEPARATOR
+        MENUITEM "&Überlappend",                ID_WINDOW_CASCADE
+        MENUITEM "&Nebeneinander",              ID_WINDOW_TILE_HORZ
+        MENUITEM "&Übereinander",               ID_WINDOW_ARRANGE
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Homepage besuchen",          ID_HELP_VISITHOMEPAGE
+        MENUITEM "&Forum",                      ID_HELP_VISITONLINEFORUM
+        MENUITEM "Mailingliste",                ID_HELP_SUBSCRIBETOMAILINGLIST
+
+        MENUITEM SEPARATOR
+        MENUITEM "&Change-Log",                 ID_HELP_CHANGELOG
+        MENUITEM "&Linzenz",                    ID_HELP_LINCENSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Über RoboMX...",             ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 325, 227
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Über RoboMX [:]"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,268,206,50,14,WS_GROUP
+    LTEXT           "RoboMX is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2.0 of the License, or (at your option) any later version.",
+                    IDC_STATIC,11,161,302,25
+    GROUPBOX        "",IDC_STATIC,7,150,311,49
+    PUSHBUTTON      "&Lizenz",IDC_LICENSE,212,206,50,14
+    PUSHBUTTON      "&Homepage",IDC_HOME,157,206,50,14
+    LTEXT           "",IDC_STATIC_RMXVER,100,10,145,17
+    LTEXT           "Auf Lizenz klicken, um den gesamten Lizenztext zu lesen",
+                    IDC_STATIC,11,188,288,8
+    LTEXT           "© 2003-2006 liegt bei den Kontributoren",IDC_STATIC,100,
+                    31,148,8
+    LTEXT           "Code:",IDC_STATIC,11,91,20,8
+    GROUPBOX        "",IDC_STATIC,95,2,223,72
+    GROUPBOX        "Leute:",IDC_STATIC,7,81,311,69,BS_LEFT
+    LTEXT           "Protokoll Version: WinMX 3.53",IDC_STATIC,100,41,97,8
+    LTEXT           "Homepage:\nEmail:",IDC_STATIC,100,53,56,17
+    LTEXT           "http://mxcontrol.sourceforge.net\nmxcontrol@gmx.net",
+                    IDC_STATIC,161,53,146,17
+    LTEXT           "Bender,\nThe Shareaza Team (www.shareaza.com),\n[Nushi]@[2SN]\t\tKingMacro,\nEugene Pustovoyt,\tJimmy Brush\nNguyen Huy Hung,\tDimitri Rochette",
+                    IDC_STATIC,11,103,145,42
+    LTEXT           "Bilder und Ton",IDC_STATIC,161,91,47,8
+    LTEXT           "Bine,\nKDE-Artist-Team,\tNo-Name,\nOlivier Doaré",
+                    IDC_STATIC,161,103,148,42
+    CONTROL         100,IDC_STATIC,"Static",SS_BITMAP,7,5,84,69
+END
+
+IDD_ADD_CACHE DIALOGEX 0, 0, 170, 139
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Raum in Liste einfügen"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "&Raumname",IDC_STATIC,6,7,36,8
+    EDITTEXT        IDC_ROOM,6,16,157,14,ES_AUTOHSCROLL
+    LTEXT           "&Login",IDC_STATIC,6,31,18,8
+    EDITTEXT        IDC_LOGIN,6,41,157,14,ES_AUTOHSCROLL
+    LTEXT           "&Leute",IDC_STATIC,6,57,19,8
+    EDITTEXT        IDC_USERS,6,66,69,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Max.",IDC_STATIC,85,58,17,8
+    EDITTEXT        IDC_LIMIT,85,66,78,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Thema",IDC_STATIC,6,84,48,8
+    EDITTEXT        IDC_TOPIC,6,95,157,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,60,118,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,113,118,50,14
+    ICON            IDI_ROOM,IDC_STATIC,6,112,20,20
+END
+
+IDD_INPUT_REQUEST DIALOGEX 0, 0, 350, 118
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Eingabe Aufforderung"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "&Eingabe Aufforderung",IDC_STATIC_IR,7,7,336,88
+    EDITTEXT        IDC_INPUT,13,34,326,57,ES_MULTILINE | WS_VSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,239,97,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,293,97,50,14
+    CONTROL         "Zeilenvorschub in #\\r\\n# umwandeln",IDC_CONVERT,
+                    "Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,13,
+                    99,221,10
+    LTEXT           "Text hier eingeben. HOCHSTELLTASTE+ENTER = Neue Zeile. ENTER = OK",
+                    IDC_STATIC,13,19,248,8
+END
+
+IDD_LOGVIEW DIALOGEX 0, 0, 202, 154
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Logdatei für "
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            IDI_LOGFILE,IDC_STATIC,7,5,20,20
+    LTEXT           "&Ein Datum auswählen und auf ""Anzeigen"" klicken",
+                    IDC_STATIC,39,5,118,17
+    LISTBOX         IDC_DATES,7,28,188,103,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Anzeigen",IDOK,85,133,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,145,133,50,14
+END
+
+IDD_RENAME DIALOGEX 0, 0, 248, 122
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nutzerdetails ändern ..."
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Name:",IDC_STATIC_NAME,12,18,39,8
+    EDITTEXT        IDC_NAME,59,15,175,14,ES_AUTOHSCROLL
+    LTEXT           "&Datei:",IDC_STATIC_FILES,11,35,38,8
+    EDITTEXT        IDC_FILES,59,32,175,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Typ",IDC_STATIC_LINE,11,51,40,8
+    COMBOBOX        IDC_LINE,59,49,175,259,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "&Alle Räume (Wenn nur in einem Raum verändert, können keine PMs empfangen werden)",
+                    IDC_ALLROOMS,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,11,73,197,19
+    DEFPUSHBUTTON   "OK",IDOK,135,101,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,191,101,50,14
+    GROUPBOX        "Nutzer",IDC_STATIC,7,7,234,61
+    ICON            IDI_USERSETUP,IDC_STATIC,7,95,20,20
+END
+
+IDD_MESSAGE_VIEW DIALOGEX 0, 0, 350, 207
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_INPUT,1,138,345,51,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    PUSHBUTTON      "Abbrechen",ID_CLOSEPM,296,191,50,14
+    CONTROL         "&Fenster offenhalten",IDC_KEEP_OPEN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,1,193,77,10
+    LTEXT           "",IDC_STATIC_ANI,93,191,142,15
+    PUSHBUTTON      "F",IDC_BOLD,1,122,22,14
+    PUSHBUTTON      "U",IDC_UNDERLINE,27,122,22,14
+    PUSHBUTTON      "K",IDC_ITALIC,53,122,22,14
+    PUSHBUTTON      "Farbe",IDC_COLOR,78,122,39,14
+    LTEXT           "[Beachte: Nur RoboMX Nutzer können Textformatierungen sehen]",
+                    IDC_STATIC1,121,125,212,8,SS_CENTERIMAGE | 
+                    SS_WORDELLIPSIS
+    DEFPUSHBUTTON   "&Senden",ID_SEND,240,191,50,14
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 430, 291
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_OK,263,270,50,14
+    PUSHBUTTON      "Anwenden",IDC_APPLY,319,270,50,14
+    PUSHBUTTON      "Abbrechen",IDC_CANCEL,373,270,50,14
+    LTEXT           "",IDC_STATIC_CLIENT,90,7,333,260,NOT WS_VISIBLE | NOT 
+                    WS_GROUP
+    CONTROL         "List1",IDC_CAT,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | 
+                    LVS_NOSCROLL | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,7,7,79,260
+    CONTROL         "&Experten Optionen anzeigen",IDC_EXPERT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,270,146,14
+END
+
+IDD_TRUSTED_USERS DIALOGEX 0, 0, 186, 188
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Freunde"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ADD_BOX,7,68,118,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Hinzufügen",IDC_ADD,129,68,50,14
+    LISTBOX         IDC_TRUSTED,7,86,118,77,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Löschen",IDC_REMOVE,129,86,50,14
+    CONTROL         "&PMs nur von Freunden akzeptieren",
+                    IDC_ACCEPT_TRUSTED_ONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,172,10
+    DEFPUSHBUTTON   "OK",IDOK,75,167,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,129,167,50,14
+    LTEXT           "Namen oder Namensteil eingeben. Achtung: Die letzten 5 Ziffern eines Namens verändern sich ständig, sollten also ignoriert werden. Wildcards erlaubt (* und ?)",
+                    IDC_STATIC,7,23,142,41
+END
+
+IDD_ADDFAV DIALOGEX 0, 0, 237, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Raum zu Favoriten hinzufügen"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,180,79,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,180,97,50,14
+    GROUPBOX        "Optionen",IDC_STATIC,133,7,97,36
+    CONTROL         "&Beim Start automatisch Eintreten",IDC_AUTOJOIN,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,137,21,86,17
+    LTEXT           "&Raum:",IDC_STATIC,7,7,72,8
+    EDITTEXT        IDC_CHANNEL,7,19,117,14,ES_AUTOHSCROLL
+    LTEXT           "&Login:",IDC_STATIC,7,35,20,8
+    EDITTEXT        IDC_LOGIN2,6,48,118,14,ES_AUTOHSCROLL
+    LTEXT           "Netzwerk:",IDC_STATIC,7,68,34,8
+    COMBOBOX        IDC_NETWORK,7,80,117,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Hinzufügen",IDC_ADD,7,97,50,14,WS_DISABLED
+    PUSHBUTTON      "&Entfernen",IDC_DELETE,74,97,50,14,WS_DISABLED
+END
+
+IDD_AUTOJOIN_MANAGER DIALOGEX 0, 0, 252, 199
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Automatische Verbindungsverwaltung"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "&Raum",IDC_STATIC,7,7,85,8
+    EDITTEXT        IDC_ADD_BOX,7,19,94,14,ES_AUTOHSCROLL
+    LTEXT           "&Login",IDC_STATIC,106,7,18,8
+    EDITTEXT        IDC_LOGIN,106,19,76,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Hinzufügen",IDC_ADD,195,19,50,14
+    CONTROL         "",IDC_AUTOJOINS,"SysListView32",LVS_REPORT | 
+                    LVS_SORTASCENDING | LVS_NOLABELWRAP | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,37,175,133
+    PUSHBUTTON      "&Entfernen",IDC_REMOVE,195,37,50,14
+    DEFPUSHBUTTON   "OK",IDOK,134,178,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,195,178,50,14
+END
+
+IDD_BROWSE_VIEW DIALOGEX 0, 0, 352, 240
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_SEARCH,38,2,313,14,ES_CENTER | ES_LOWERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "Vollständigen Pfad anzeigen",IDC_PATH,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,17,176,10
+    CONTROL         "",IDC_FILE_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,1,29,350,209
+    CTEXT           "test",IDC_STATIC_ANI,1,18,170,8,SS_CENTERIMAGE | 
+                    SS_WORDELLIPSIS
+    LTEXT           "Suchen:",IDC_STATIC1,1,6,34,8
+END
+
+IDD_CFG_AWAY DIALOGEX 0, 0, 319, 245
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Automatische Abwesenheit",IDC_STATIC,3,4,310,76
+    CONTROL         "Abwesend wenn Inaktiv für",IDC_AWAY_IF_IDLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,17,103,10
+    EDITTEXT        IDC_MINUTES,114,15,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Minuten.",IDC_STATIC,159,18,29,8
+    LTEXT           "Abwesenheit:",IDC_STATIC,6,39,65,8
+    EDITTEXT        IDC_AUTOREASON,74,36,233,14,ES_AUTOHSCROLL
+    LTEXT           "Namens Pr&äfix",IDC_STATIC,6,51,148,8
+    EDITTEXT        IDC_AUTOPREFIX,6,61,148,14,ES_AUTOHSCROLL
+    LTEXT           "Namens Suffi&x",IDC_STATIC,159,51,107,8
+    EDITTEXT        IDC_AUTOSUFFIX,159,61,148,14,ES_AUTOHSCROLL
+    LTEXT           "Menü &Eintrag",IDC_STATIC,6,98,148,8
+    EDITTEXT        IDC_LABEL,6,108,148,14,ES_AUTOHSCROLL
+    LTEXT           "Abwesenheits &Grund",IDC_STATIC,159,98,148,8
+    EDITTEXT        IDC_REASON,159,108,148,14,ES_AUTOHSCROLL
+    LTEXT           "Namens &Präfix",IDC_STATIC,6,123,148,8
+    EDITTEXT        IDC_PREFIX,6,133,148,14,ES_AUTOHSCROLL
+    LTEXT           "Namens &Suffix",IDC_STATIC,159,123,107,8
+    EDITTEXT        IDC_SUFFIX,159,133,107,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Hinz.",IDC_ADD,270,133,37,14
+    GROUPBOX        "Abwesenheits Nachrichten",IDC_STATIC,3,87,310,153
+    CONTROL         "",IDC_AWAY,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_SORTASCENDING | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,6,152,260,81
+    PUSHBUTTON      "&Bearbeiten",IDC_EDIT,270,152,37,14
+    PUSHBUTTON      "&Löschen",IDC_DELETE,270,169,37,14
+    CONTROL         "Zurücksetzen wenn aktiv",IDC_AUTOBACK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,197,17,110,10
+END
+
+IDD_CFG_CHANNELBAR DIALOGEX 0, 0, 318, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Raumleisten Tooltip",IDC_STATIC,7,7,304,121
+    COMBOBOX        IDC_TOOLTIPTYPE,12,18,96,79,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_TOOLTIPHTML,12,34,200,89,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Effekt:",IDC_STATIC,182,20,23,8
+    COMBOBOX        IDC_BG_EFFECT,216,18,89,88,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Hintergrund #1",IDC_BG1,219,44,58,14
+    LTEXT           "",IDC_STATIC_BG1,280,44,25,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Hintergrund #2",IDC_BG2,219,60,58,14
+    LTEXT           "",IDC_STATIC_BG2,280,60,25,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Hintergrund #3",IDC_BG3,219,77,58,14
+    LTEXT           "",IDC_STATIC_BG3,280,77,25,14,0,WS_EX_STATICEDGE
+    LTEXT           "Körnung:",IDC_STATIC,219,97,58,8
+    EDITTEXT        IDC_GRAN,280,94,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Transparenz:",IDC_STATIC,219,113,58,8
+    EDITTEXT        IDC_TRANS,280,110,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "&Raum",IDC_STATIC,12,143,19,8
+    EDITTEXT        IDC_CHANNELNAME,43,140,234,14,ES_AUTOHSCROLL
+    LTEXT           "&Bild:",IDC_STATIC,12,159,14,8
+    EDITTEXT        IDC_IMAGE,43,156,234,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,280,156,25,14
+    PUSHBUTTON      "&Hinz.",IDC_ADD,280,173,25,14
+    GROUPBOX        "Raumbilder",IDC_STATIC,7,128,304,109
+    CONTROL         "",IDC_CHANNELIMAGES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,12,173,265,59
+    PUSHBUTTON      "Bea&r.",IDC_EDIT,280,189,25,14
+    PUSHBUTTON      "&Lösch.",IDC_REMOVE,280,205,25,14
+    PUSHBUTTON      "&?",IDC_HELP_INET,145,17,20,14
+    PUSHBUTTON      "&Variablen",IDC_VARS,110,17,32,14
+    CONTROL         "&Alten Tooltip nutzen",IDC_USEOLD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,219,34,85,10
+END
+
+IDD_CFG_CHATSOUNDS DIALOGEX 0, 0, 317, 230
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Klänge aktivieren",IDC_ENABLE_CSFX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,18,120,10
+    LTEXT           "&Geben Sie die Worte ein, die ein Klang aktivieren sollen. Groß- und Kleinschreibung wird ignoriert. Sie können Wildcards benutzen (* und ?)",
+                    IDC_STATIC,11,33,249,18
+    EDITTEXT        IDC_TRIGGER,11,52,293,14,ES_AUTOHSCROLL
+    LTEXT           "&Klangdatei auswählen",IDC_STATIC,11,70,191,8
+    EDITTEXT        IDC_REACTION,11,81,260,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE_SOUND,275,81,29,14
+    PUSHBUTTON      "&Hinz.",IDC_ADD,275,100,29,14
+    CONTROL         "",IDC_SOUNDLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_NOLABELWRAP | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,11,100,260,115
+    PUSHBUTTON      "&Bearb.",IDC_EDIT,275,117,29,14
+    PUSHBUTTON      "&Löschen",IDC_DELETE,275,135,29,14
+    PUSHBUTTON      "&Hören",IDC_PLAY,275,154,29,14
+    GROUPBOX        "Klänge",IDC_STATIC_CHATSOUNDS,7,7,303,216
+END
+
+IDD_CFG_COLORS DIALOGEX 0, 0, 316, 228
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Typ",IDC_LINE,8,11,24,14
+    LTEXT           "",IDC_STATIC_LINE,34,12,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Hintergrund Spezial",IDC_HILITE,59,11,77,14
+    LTEXT           "",IDC_STATIC_HILITE,140,12,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Datei",IDC_FILES,8,27,24,14
+    LTEXT           "",IDC_STATIC_FILES,34,28,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Text Spezial",IDC_HILITE_TXT,59,27,77,14
+    LTEXT           "",IDC_STATIC_HILITE_TXT,140,28,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "IP",IDC_NODEIP,8,43,24,14
+    LTEXT           "",IDC_STATIC_NODEIP,34,43,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Schlüsselworte",IDC_EDITHILITE,59,43,77,14
+    PUSHBUTTON      "Port",IDC_PORT,8,60,24,14
+    LTEXT           "",IDC_STATIC_NODEPORT,34,61,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Gitterhintergrund",IDC_GRID_BG,59,60,77,14
+    LTEXT           "",IDC_STATIC_GRID_BG,140,61,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Gittertext",IDC_GRID_TXT,57,77,77,14
+    LTEXT           "",IDC_STATIC_GRID_TXT,140,78,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Thema",IDC_TOPIC,8,109,24,14
+    LTEXT           "",IDC_STATIC_TOPIC,34,110,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Motd",IDC_MOTD,59,109,24,14
+    LTEXT           "",IDC_STATIC_MOTD,85,110,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Hintergrund",IDC_BACKG,112,109,50,14
+    LTEXT           "",IDC_STATIC_BG,165,110,22,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "An",IDC_JOIN,8,125,24,14
+    LTEXT           "",IDC_STATIC_JOIN,34,126,19,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Ab",IDC_PART,59,125,24,14
+    LTEXT           "",IDC_STATIC_PART,85,126,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Änderung",IDC_DOCHI,112,125,50,14
+    LTEXT           "",IDC_STATIC_DOCHI,165,126,22,13,0,WS_EX_STATICEDGE
+    CONTROL         "Farbe bei Fokus ändern",IDC_FOCUSCLR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,145,100,10
+    PUSHBUTTON      "Fokus",IDC_COLORFOCUS,112,143,49,14
+    LTEXT           "",IDC_STATIC_FOCUS,165,144,22,12,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Administrator",IDC_OPMSG,8,159,50,14
+    LTEXT           "",IDC_STATIC_OPMSG,63,160,22,13,0,WS_EX_STATICEDGE
+    CONTROL         "Farbkodes ignorieren",IDC_BLOCKMCMA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,89,161,97,10
+    PUSHBUTTON      "Warten",IDC_PENDING,8,175,50,14
+    LTEXT           "",IDC_STATIC_PENDING,63,176,22,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Erfolg",IDC_SUCCESS,111,190,50,14
+    LTEXT           "",IDC_STATIC_SUCCESS,165,191,22,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Fehler",IDC_ERROR,8,191,50,14
+    LTEXT           "",IDC_STATIC_ERROR,63,192,22,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Zeitstempel",IDC_TIME,111,206,50,14
+    LTEXT           "",IDC_STATIC_TIME,165,207,22,13,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Hyper&links",IDC_LINK,8,206,50,14
+    LTEXT           "",IDC_STATIC_LINK,63,207,22,13,0,WS_EX_STATICEDGE
+    LTEXT           "Einschließung",IDC_STATIC_NICKENC_MSG,198,10,47,8
+    LTEXT           "&Nickname",IDC_STATIC_NAME,251,10,33,8
+    LTEXT           "&Vorne:",IDC_STATIC_FRONT_MSG,198,27,22,8
+    EDITTEXT        IDC_MSG_FRONT,222,25,23,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Farbe",IDC_COLOR_NAME,249,25,24,14
+    LTEXT           "",IDC_STATIC_COLOR_NAME_PREV,276,25,24,13,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "&Hinten:",IDC_STATIC_END_MSG,198,43,24,8
+    EDITTEXT        IDC_MSG_END,222,41,23,12,ES_AUTOHSCROLL
+    LTEXT           "Text",IDC_STATIC_MSG,250,43,15,8
+    PUSHBUTTON      "Farbe",IDC_ENC_MSG_COLOR,198,54,21,14
+    LTEXT           "",IDC_STATIC_COLOR_ENC_MSG_PREV,221,54,23,14,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Farbe",IDC_COLOR_MESSAGE,250,54,24,14
+    LTEXT           "",IDC_STATIC_COLOR_MSG_PREV,276,54,24,13,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Einschließung",IDC_STATIC_NICKENC_MSG2,198,88,47,8
+    LTEXT           "Vorne:",IDC_STATIC_FRONT_ACTION,198,99,22,8
+    EDITTEXT        IDC_ACTION_FRONT,222,97,23,12,ES_AUTOHSCROLL
+    CONTROL         "Namen einfärben",IDC_COLORACTIONNAME,"Button",
+                    BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,251,94,50,18
+    LTEXT           "Hinten:",IDC_STATIC_END_ACTION,198,112,24,8
+    EDITTEXT        IDC_ACTION_END,222,110,23,12,ES_AUTOHSCROLL
+    LTEXT           "Aktion",IDC_STATIC_NICKNAME_ACTION,253,112,21,8
+    PUSHBUTTON      "Farbe",IDC_ENC_ACTION_COLOR,198,125,21,14
+    LTEXT           "",IDC_STATIC_COLOR_ENG_ACTION_PREV,222,125,23,14,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Farbe",IDC_COLOR_ACTION,250,125,24,14
+    LTEXT           "",IDC_STATIC_COLOR_ACTION_PREV,276,126,24,13,0,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "WinMX",IDC_WINMX_LIKE,198,174,49,14
+    PUSHBUTTON      "Hell / Dunkel",IDC_LIGHT_DARK,253,174,49,14
+    PUSHBUTTON      "Blau",IDC_BLUE,198,191,49,14
+    PUSHBUTTON      "Dunkel / Hell",IDC_DARK_LIGHT,253,191,49,14
+    PUSHBUTTON      "&Importieren",IDC_IMPORT,198,206,49,14
+    PUSHBUTTON      "E&xportieren",IDC_EXPORT,253,206,49,14
+    GROUPBOX        "Channel",IDC_STATIC_MISCCOLOR,1,98,189,125
+    GROUPBOX        "Datei- / Nutzer- / Raumliste",IDC_STATIC_USERLIST,1,1,
+                    189,95
+    GROUPBOX        "Nachricht",IDC_STATIC_MESSAGE,194,1,113,75
+    GROUPBOX        "Aktion",IDC_STATIC_ACTION,194,76,113,70
+    GROUPBOX        "Farb Voreinstellungen",IDC_STATIC,194,148,116,79
+    CONTROL         "Echten Nicknamen zeigen",IDC_MCMARAW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,89,175,97,10
+END
+
+IDD_CFG_EMOTICONS DIALOGEX 0, 0, 317, 230
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Smileys",IDC_STATIC_EMOTICONS,7,7,303,216
+    LTEXT           "Text eingeben, das das Smiley aktiviert",IDC_STATIC,11,
+                    18,163,8
+    EDITTEXT        IDC_ACTTEXT,11,28,293,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_SELECTBMP,270,58,34,14
+    EDITTEXT        IDC_BMP,11,58,256,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Hinz.",IDC_ADD_EMOTICON,270,86,34,14
+    PUSHBUTTON      "&Bearb.",IDC_EDIT,270,102,34,14
+    CONTROL         "",IDC_EMOTICONLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_ALIGNLEFT | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,11,86,256,131
+    PUSHBUTTON      "Löschen",IDC_DELETE_EMOTICON,270,118,34,14
+    LTEXT           "Vorschau:",IDC_STATIC,270,159,34,8
+    CONTROL         111,IDC_PREVIEW,"Static",SS_BITMAP,270,169,16,15
+    LTEXT           "Bild auswählen",IDC_STATIC,11,46,175,8
+END
+
+IDD_CFG_EXTENSIONS DIALOGEX 0, 0, 316, 231
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "Plugins",IDC_STATIC_PLUGINS,2,2,306,223
+    CONTROL         "",IDC_PLUGINLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,8,38,295,166
+    PUSHBUTTON      "&Einstellungen",IDC_CONFIGURE,254,207,49,14
+    PUSHBUTTON      "&Löschen",IDC_UNINSTALL,61,207,50,14
+    PUSHBUTTON      "&Neuladen",IDC_RESCAN,8,207,50,14
+    LTEXT           "Hier können Sie die Plugins verwalten, die z.Z. von RoboMX geladen wurden. Neu Plugins einfach ins Plugin Verzeichnis kopieren und auf ""Neuladen"" klicken.",
+                    IDC_STATIC,8,15,295,21
+END
+
+IDD_CFG_FORMAT DIALOGEX 0, 0, 317, 230
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Tooltip bei neuer PM",IDC_DISPLAYPMTOOL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,21,160,10
+    CONTROL         "Fensterposition merken",IDC_REMEMBER_POS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,188,21,114,10
+    CONTROL         "Fenster ins Systemtray minimieren",IDC_MINITRAY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,32,166,10
+    CONTROL         "Alle Fenster maximiert",IDC_MDIMAXI,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,188,32,114,10
+    CONTROL         "Hintergrundbild benutzen",IDC_USE_BGIMAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,62,100,10
+    PUSHBUTTON      "&Ändern",IDC_SELECT_IMAGE,14,76,50,14
+    LTEXT           "",IDC_STATIC_IMAGEPATH,69,77,233,13,SS_CENTERIMAGE | 
+                    SS_PATHELLIPSIS,WS_EX_STATICEDGE
+    CONTROL         "Systemkonsole nach Verbindung verstecken",
+                    IDC_HIDESYSTEM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,
+                    115,171,10
+    CONTROL         "Smileys zeigen",IDC_EMOTICONS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,195,115,107,10
+    CONTROL         "Zeitstempel anzeigen",IDC_TIMESTAMP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,131,156,10
+    COMBOBOX        IDC_TIME,195,130,114,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "Schriftart",IDC_STATIC,7,174,303,49
+    COMBOBOX        IDC_FONT,14,186,167,79,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Größe",IDC_STATIC_SIZE,195,188,43,8
+    EDITTEXT        IDC_FONTSIZE,242,186,60,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_ENCODING,14,203,115,76,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Fett",IDC_BOLD,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    137,204,43,10
+    CONTROL         "Kursiv",IDC_ITALIC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,195,204,35,10
+    CONTROL         "Unterstrichen",IDC_UNDERLINE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,242,204,60,10
+    GROUPBOX        "Aussehen und Verhalten",IDC_STATIC,7,7,303,90
+    GROUPBOX        "Chat Einstellungen",IDC_STATIC,7,102,303,67
+    COMBOBOX        IDC_BARTOP,14,45,166,39,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Teiler nach letzter Nachricht beim Umschalten zwischen Räumen einfügen",
+                    IDC_SEPERATOR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,
+                    144,249,10
+    CONTROL         "Zeige Füllstatus des Eingabesteuerelemts",
+                    IDC_SHOWFILLSTATUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    14,155,290,10
+END
+
+IDD_CFG_FUN DIALOGEX 0, 0, 315, 228
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Sie können hier einen eigenen Anwendungsnamen einstellen. Dieser wird in der Titelzeile und für das IP Client Protokoll verwendet.",
+                    IDC_STATIC_RANDOMIZER,164,132,142,71
+    GROUPBOX        "Firma",IDC_STATIC_VENDORS,2,3,146,104
+    EDITTEXT        IDC_VENDOR_ADD,7,17,105,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_BTN_VENDOR_ADD,115,17,25,14
+    CONTROL         "",IDC_VENDORS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_NOLABELWRAP | LVS_AUTOARRANGE | LVS_ALIGNLEFT | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,34,105,68
+    GROUPBOX        "Namen",IDC_STATIC_NAMES,156,3,152,104
+    EDITTEXT        IDC_NAME_ADD,164,17,105,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_BTN_NAME_ADD,276,17,25,14
+    CONTROL         "",IDC_NAMES,"SysListView32",LVS_REPORT | LVS_SINGLESEL | 
+                    LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_NOLABELWRAP | 
+                    LVS_AUTOARRANGE | LVS_ALIGNLEFT | LVS_NOCOLUMNHEADER | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,164,34,105,68
+    GROUPBOX        "Suffixe",IDC_STATIC_SUFFIXES,2,110,146,105
+    EDITTEXT        IDC_SUFFIX_ADD,7,124,105,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "+",IDC_BTN_SUFFIX_ADD,115,124,25,14
+    CONTROL         "",IDC_SUFFIXES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_NOLABELWRAP | LVS_AUTOARRANGE | LVS_ALIGNLEFT | 
+                    LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,7,142,105,68
+    GROUPBOX        "Info",IDC_STATIC,156,110,152,105
+    PUSHBUTTON      "-",IDC_BTN_VENDOR_REM,115,34,25,14
+    PUSHBUTTON      "-",IDC_BTN_NAME_REM,276,34,25,14
+    PUSHBUTTON      "-",IDC_BTN_SUFFIX_REM,115,142,25,14
+END
+
+IDD_CFG_GENERAL DIALOGEX 0, 0, 317, 238
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Automatisch zu WPN verbinden",IDC_CONNECT_WPN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,19,118,10
+    CONTROL         "&Bei Fehler Verbindung wiederholen",IDC_RETRY_JOINS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,36,124,10
+    LTEXT           "Maximale Anzahl von Versuchen:",IDC_STATIC,17,50,115,8
+    EDITTEXT        IDC_JOINRETRIES,17,61,61,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "mal",IDC_STATIC,85,64,35,8
+    CONTROL         "Kommando und Nachrichtenverlauf benutzen",
+                    IDC_ENABLE_HISTORY,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    11,103,189,10
+    LTEXT           "Maximal ",IDC_STATIC,10,117,33,8
+    LTEXT           "Nachrichten / Befehle speichern",IDC_STATIC,108,117,196,
+                    8
+    EDITTEXT        IDC_HISTORDEPTH,50,115,53,13,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Sie können mit den Cursortasten durch den Verlauf schalten",
+                    IDC_STATIC,11,131,188,15
+    CONTROL         "PING in der Systemkonsole anzeigen",IDC_PING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,154,158,10
+    CONTROL         "Chatlog erstellen",IDC_LOG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,169,157,10
+    LTEXT           "Logdateien in diesem Verzeichnis ablegen",IDC_STATIC,11,
+                    198,162,8
+    EDITTEXT        IDC_LOGDIR,11,213,264,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "&...",IDC_SELECT_LOG_DIR,279,213,25,14
+    GROUPBOX        "Verbindungseinstellung",IDC_STATIC,7,7,133,76
+    GROUPBOX        "Logs und Verlauf",IDC_STATIC,7,89,303,141
+    PUSHBUTTON      "Log Verzeichnis öffnen",IDC_OPENFOLDER,199,167,105,14
+    CONTROL         "Raumliste Automatisch laden",IDC_LISTCHANNEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,19,134,10
+    CONTROL         "Befehl-Roller benutzen (Bild auf / ab Tasten)",
+                    IDC_SCROLLER,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,152,54,137,23
+    CONTROL         "Nach neuen Versionen gucken",IDC_UPDATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,152,36,117,10
+    GROUPBOX        "Programmverhalten",IDC_STATIC,145,7,159,76
+    CONTROL         "Log vom letzten Besuch beim Betreten eines Raums in das Fenster laden",
+                    IDC_LOAD_LAST_LOG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    11,185,293,10
+END
+
+IDD_CFG_MESSAGES DIALOGEX 0, 0, 315, 229
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Text eingeben, der angezeigt wird, wenn neuer Nutzer einen Raum betritt",
+                    IDC_STATIC_JOIN,11,20,266,8
+    EDITTEXT        IDC_JOIN,11,33,277,12,ES_AUTOHSCROLL
+    LTEXT           "Text eingeben, der angezeigt wird, wenn ein Nutzer den Raum verlässt",
+                    IDC_STATIC_PART,11,72,245,8
+    EDITTEXT        IDC_PART,11,86,278,12,ES_AUTOHSCROLL
+    LTEXT           "Erweitertes Winamp Plugin gefunden :-)",IDC_STATIC_WA,
+                    11,135,193,19
+    PUSHBUTTON      "&Installiere Plugin",IDC_INSTALL,244,137,56,14,
+                    WS_DISABLED
+    LTEXT           "MP3 / &Audio:",IDC_STATIC,11,159,46,8
+    EDITTEXT        IDC_NOWLISTENING,11,169,289,12,ES_AUTOHSCROLL
+    LTEXT           "&Video:",IDC_STATIC,11,190,40,8
+    EDITTEXT        IDC_NOW_WATCHING,11,202,289,12,ES_AUTOHSCROLL
+    GROUPBOX        "Eintrittsnachricht",IDC_STATIC_JOINPART,5,4,303,49
+    GROUPBOX        "MP3 / Video Nachricht (F8) [Benötigt Winamp 2.x oder 5.x]",
+                    IDC_STATIC,5,117,303,105
+    GROUPBOX        "Nachricht beim Verlassen",IDC_STATIC,5,56,303,52
+END
+
+IDD_CFG_QUICKMSG DIALOGEX 0, 0, 315, 230
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_MSG_ADD,12,42,238,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Hinzufügen",IDC_MSG_ADD_BTN,253,42,50,15
+    LISTBOX         IDC_QUICKCMDS,12,62,238,157,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Löschen",IDC_QUICKREM,253,62,50,15
+    PUSHBUTTON      "&Bearbeiten",IDC_EDIT,253,81,50,14
+    PUSHBUTTON      "&Rauf",IDC_QUICKUP,253,100,50,15
+    PUSHBUTTON      "R&unter",IDC_QUICKDOWN,253,118,50,15
+    GROUPBOX        "&Vordefinierte Nachrichten",IDC_STATIC_QUICK,7,7,301,
+                    217
+    LTEXT           "Hier können sie Vordefinierte Nachrichten / Befehle einrichten. Diese können Sie in Räumen über die Cursortasten auswählen",
+                    IDC_STATIC,12,20,238,16
+END
+
+IDD_CFG_SYSSOUNDS DIALOGEX 0, 0, 315, 230
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         "Systemklänge benutzen",IDC_ENABLE_SFX,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,15,91,10
+    PUSHBUTTON      "&Verbunden",IDC_CONNECTED,9,29,50,14
+    PUSHBUTTON      "Keiner",1030,61,29,24,14
+    PUSHBUTTON      "Hören",IDC_PLAY_CONNECTED,89,29,23,14
+    LTEXT           "",IDC_STATIC_CONNECT,116,29,184,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN | SS_PATHELLIPSIS
+    PUSHBUTTON      "&Geschlossen",IDC_DISCONNECTED,9,47,50,14
+    PUSHBUTTON      "Keiner",IDC_DISCONNECTED_NO,61,47,24,14
+    PUSHBUTTON      "Hören",IDC_PLAY_DISCONNECTED,89,47,23,14
+    LTEXT           "",IDC_STATIC_DISCONNECTED,116,47,184,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN | SS_PATHELLIPSIS
+    PUSHBUTTON      "&Thema",IDC_TOPIC,9,65,50,14
+    PUSHBUTTON      "Keiner",IDC_TOPIC_NO,61,65,24,14
+    PUSHBUTTON      "Hören",IDC_PLAY_TOPIC,89,65,23,14
+    LTEXT           "",IDC_STATIC_TOPIC,116,65,184,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN | SS_PATHELLIPSIS
+    PUSHBUTTON      "&Motd",IDC_MOTD,9,83,50,14
+    PUSHBUTTON      "Keiner",IDC_MOTD_NO,62,83,24,14
+    PUSHBUTTON      "Hören",IDC_PLAY_MOTD,89,83,23,14
+    LTEXT           "",IDC_STATIC_MOTD,116,83,184,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN | SS_PATHELLIPSIS
+    PUSHBUTTON      "&Umleitung",IDC_REDIRECTED,9,101,50,14
+    PUSHBUTTON      "Keiner",IDC_REDIRECT_NO,61,101,24,14
+    PUSHBUTTON      "Hören",IDC_PLAY_REDIRECTED,89,101,23,14
+    LTEXT           "",IDC_STATIC_REDIRECTED,116,101,184,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN | SS_PATHELLIPSIS
+    PUSHBUTTON      "&Start",IDC_STARTUP,9,119,50,14
+    PUSHBUTTON      "Keiner",IDC_START_NO,61,119,24,14
+    PUSHBUTTON      "Hören",IDC_PLAY_START,89,119,23,14
+    LTEXT           "",IDC_STATIC_STARTUP,116,119,184,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN | SS_PATHELLIPSIS
+    PUSHBUTTON      "&Fehler",IDC_SYSERROR,9,137,50,14
+    PUSHBUTTON      "Keiner",IDC_ERROR_NO,61,137,24,14
+    PUSHBUTTON      "Hören",IDC_PLAY_ERROR,89,137,23,14
+    LTEXT           "",IDC_STATIC_SYSERROR,116,137,184,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN | SS_PATHELLIPSIS
+    PUSHBUTTON      "&PM",IDC_PM,9,155,50,14
+    PUSHBUTTON      "Keiner",IDC_PM_NO,61,155,24,14
+    PUSHBUTTON      "Hören",IDC_PLAY_PM,89,155,23,14
+    LTEXT           "",IDC_STATIC_PM,116,155,184,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN | SS_PATHELLIPSIS
+    GROUPBOX        "Systemklänge",IDC_STATIC_SFX,1,1,307,222
+END
+
+IDD_CFG_USERLIST DIALOGEX 0, 0, 318, 242
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Stil",IDC_STATIC,224,3,88,62
+    CONTROL         "&Detailiert",IDC_DETAILED,"Button",BS_AUTORADIOBUTTON,
+                    229,15,77,10
+    GROUPBOX        "Nutzerrank Bild",IDC_STATIC,224,86,88,77
+    PUSHBUTTON      "&Normal",IDC_NORMAL,229,97,50,14
+    CONTROL         "",IDC_STATIC_NORMAL,"Static",SS_BITMAP,286,98,15,13
+    PUSHBUTTON      "&Stimme",IDC_VOICED,229,113,50,14
+    CONTROL         "",IDC_STATIC_VOICED,"Static",SS_BITMAP,286,114,15,13
+    PUSHBUTTON      "Ad&min",IDC_ADMIN,229,129,50,14
+    CONTROL         "",IDC_STATIC_ADMIN,"Static",SS_BITMAP,286,130,15,13
+    PUSHBUTTON      "Host",IDC_HOST,229,145,50,14
+    CONTROL         "",IDC_STATIC_HOST,"Static",SS_BITMAP,286,146,15,13
+    GROUPBOX        "Gruppierung",IDC_STATIC,4,3,217,40
+    CONTROL         "@ und + sind immer oben",IDC_OPTTOP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,15,158,10
+    CONTROL         "Spezielle Farben für Schlüsselwörter",IDC_USERHILITE,
+                    "Button",BS_AUTOCHECKBOX | BS_MULTILINE | WS_TABSTOP,8,
+                    27,131,10
+    CONTROL         "Hintergrundbild benutzen",IDC_USE_BG_IMG,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,55,97,10
+    CONTROL         "",IDC_STATIC_PATH,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_CENTERIMAGE | SS_PATHELLIPSIS | WS_GROUP,8,68,150,13,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "&Bild auswählen",IDC_SELECT_IMAGE,163,67,50,14
+    GROUPBOX        "Hintergrundbild",IDC_STATIC,4,45,217,79
+    CONTROL         "&Kompakt",IDC_COMPACT,"Button",BS_AUTORADIOBUTTON,229,
+                    27,77,10
+    CONTROL         "&Groß A",IDC_BIGICON,"Button",BS_AUTORADIOBUTTON,229,38,
+                    77,10
+    CONTROL         "Groß B",IDC_SMALLICON,"Button",BS_AUTORADIOBUTTON,229,
+                    50,77,10
+    CONTROL         "&Kacheln",IDC_TILE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,8,87,41,10
+    LTEXT           "X-Offset:",IDC_STATIC,8,103,31,8
+    EDITTEXT        IDC_X_OFFSET,41,100,40,14,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,84,103,8,8
+    LTEXT           "Y-Offset:",IDC_STATIC,125,103,31,8
+    EDITTEXT        IDC_Y_OFFSET,159,100,40,14,ES_AUTOHSCROLL
+    LTEXT           "%",IDC_STATIC,205,103,8,8
+    GROUPBOX        "Standard Benutzer Avatar",IDC_STATIC,4,127,217,36
+    CONTROL         "",IDC_STATIC_PATHAVATAR,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_CENTERIMAGE | SS_PATHELLIPSIS | WS_GROUP,8,146,150,13,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "Bild ausw&ählen",IDC_SELECT_AVATAR,163,145,50,14
+    GROUPBOX        "Standard Raum Bild",IDC_STATIC,4,199,307,36
+    CONTROL         "",IDC_STATIC_PATH3,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_CENTERIMAGE | SS_PATHELLIPSIS | WS_GROUP,8,218,213,13,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "B&ild auswählen",IDC_SELECT_IMAGE3,229,217,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,4,191,307,1
+END
+
+IDD_CFG_USERTOOL DIALOGEX 0, 0, 319, 234
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Nutzerlisten Tooltip",IDC_STATIC,7,7,305,114
+    EDITTEXT        IDC_TOOLTIPHTML,12,18,200,81,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_NOHIDESEL | 
+                    ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    COMBOBOX        IDC_BG_EFFECT,216,18,89,88,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Hintergrund #1",IDC_BG1,219,37,58,14
+    LTEXT           "",IDC_STATIC_BG1,280,37,25,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Hintergrund #2",IDC_BG2,219,53,58,14
+    LTEXT           "",IDC_STATIC_BG2,280,53,25,14,0,WS_EX_STATICEDGE
+    PUSHBUTTON      "Hintegrund #3",IDC_BG3,219,69,58,14
+    LTEXT           "",IDC_STATIC_BG3,280,69,25,14,0,WS_EX_STATICEDGE
+    LTEXT           "Körnung:",IDC_STATIC,219,88,58,8
+    EDITTEXT        IDC_GRAN,280,85,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Transparenz:",IDC_STATIC,219,100,58,8
+    EDITTEXT        IDC_TRANS,280,101,25,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "&Benutze alte Tooltips",IDC_USEOLD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,103,85,10
+    PUSHBUTTON      "&Variablen",IDC_VARS,145,101,40,14
+    PUSHBUTTON      "&?",IDC_HELP_INET,192,101,20,14
+    LTEXT           "&Name:",IDC_STATIC,12,138,22,8
+    EDITTEXT        IDC_USERNAME,43,135,234,14,ES_AUTOHSCROLL
+    LTEXT           "&Bild",IDC_STATIC,12,154,12,8
+    EDITTEXT        IDC_IMAGE,43,151,234,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BROWSE,280,151,25,14
+    PUSHBUTTON      "&Hinz.",IDC_ADD,280,167,25,14
+    GROUPBOX        "Benutzer Bilder",IDC_STATIC,7,124,305,106
+    CONTROL         "",IDC_USERIMAGES,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | 
+                    LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | 
+                    WS_TABSTOP,12,167,265,59
+    PUSHBUTTON      "&Bearb.",IDC_EDIT,280,183,25,14
+    PUSHBUTTON      "&Löschen",IDC_REMOVE,280,198,25,14
+END
+
+IDD_CFG_WELCOME DIALOGEX 0, 0, 315, 231
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "&Räume",IDC_STATIC,14,17,47,8
+    LISTBOX         IDC_CHANNELLIST,14,29,286,73,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_CHANNELNAME,14,106,177,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Hinzuf.",IDC_ADDCHANNEL,194,106,32,14
+    PUSHBUTTON      "Editieren",IDC_EDITROOM,230,106,32,14
+    PUSHBUTTON      "Löschen",IDC_REMOVECHANNEL,267,106,33,14
+    CONTROL         "&Alle Räume",IDC_ALLCHANNELS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,238,16,62,10
+    LTEXT           "&Begrüßungstext (zufällig)",IDC_STATIC_GREETING,14,126,
+                    145,8
+    LISTBOX         IDC_WELCOMES,14,139,286,66,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_GREETING,14,208,177,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Hinzuf.",IDC_ADDCHANNEL2,194,207,32,14
+    PUSHBUTTON      "Editieren",IDC_EDITWELCOME,230,207,32,14
+    PUSHBUTTON      "Löschen",IDC_REMOVECHANNEL2,267,207,33,14
+    GROUPBOX        "Automatische Begrüßung",IDC_STATIC,7,7,301,217
+END
+
+IDD_CFG_WPN DIALOGEX 0, 0, 317, 230
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "Vaterknoten von WinMX Peer Cache Server holen",
+                    IDC_GET_NODE,"Button",BS_AUTORADIOBUTTON,12,17,174,10
+    CONTROL         "Spezifischen Vaterknoten erzwingen",IDC_OWN_NODE,"Button",
+                    BS_AUTORADIOBUTTON,12,28,174,10
+    LTEXT           "&IP/Hostname und TCP Port des Vaterknotens (<IP>:<PORT>)",
+                    IDC_STATIC,12,41,291,8
+    EDITTEXT        IDC_NODENAME,12,54,291,14,ES_AUTOHSCROLL
+    LTEXT           "E&xterne IP odr Hostnamen des Vaterknoten (Lehr lassen falls nicht benötigt)",
+                    IDC_STATIC,12,75,291,8
+    EDITTEXT        IDC_NODENAME2,12,84,291,14,ES_AUTOHSCROLL
+    LTEXT           "Pri&vatsphäre",IDC_STATIC,12,120,49,8
+    EDITTEXT        IDC_PRIVACY,69,117,234,14,ES_AUTOHSCROLL
+    LTEXT           "I&gnoriert",IDC_STATIC,12,138,49,8
+    EDITTEXT        IDC_IGNORED,69,135,234,14,ES_AUTOHSCROLL
+    LTEXT           "RoboMX kann eine künstliche Dateiliste zum WPN schocken, so daß Sie eine Nachricht in ihrer Liste oder eine ""Offline Liste"" haben können.",
+                    IDC_STATIC,12,170,291,20
+    PUSHBUTTON      "&Liste bearbeiten",IDC_EDIT_LIST,12,197,66,14
+    LTEXT           "Nach Veränderung, WPN Verbindung neu aufbauen um die Liste zu Aktualisieren",
+                    IDC_STATIC,82,196,221,17
+    GROUPBOX        "Modus (Für Experten, so lassen wenn nicht sicher was das bedeutet ;))",
+                    IDC_STATIC,7,7,303,97
+    GROUPBOX        "Künstliche Dateiliste",IDC_STATIC,7,159,303,64
+    GROUPBOX        "PM Filter Text",IDC_STATIC,7,106,303,50
+    PUSHBUTTON      "PeerCach-Server bearbeiten",IDC_EDITPCS,202,17,99,14
+END
+
+IDD_CHANNELLIST DIALOGEX 0, 0, 400, 168
+STYLE DS_SETFONT | WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Suchen:",IDC_STATIC_SEARCH,2,5,41,8
+    EDITTEXT        IDC_SEARCH,47,2,234,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Aktualisieren",IDC_REFRESH,287,2,54,14
+    PUSHBUTTON      "&Neuladen",IDC_CLEAR_REFRESH,344,2,54,14
+    LTEXT           "Status:",IDC_STATIC_STATUS,2,21,33,8
+    CONTROL         "",IDC_STATUS,"msctls_progress32",WS_BORDER,47,18,88,14
+    RTEXT           "",IDC_STATIC_ROOMS,140,21,141,8
+    CONTROL         "&Fokus auf Auswahl",IDC_SELECTION_NOSCROLL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,287,20,111,10
+    CONTROL         "List1",IDC_CHANNELS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,2,33,396,133
+END
+
+IDD_CHAT_FORM DIALOGEX 0, 0, 458, 235
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_INPUT,1,219,403,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Exit",IDC_LEAVE,407,219,50,14,0,WS_EX_STATICEDGE
+    CONTROL         "",IDC_USERLIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_TABSTOP,296,2,161,
+                    210,WS_EX_CLIENTEDGE
+    LTEXT           "",IDC_LETTERSLEFT,1,213,456,6
+END
+
+IDD_CONFIRM_EXIT DIALOGEX 0, 0, 199, 84
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Wirklich Beenden?"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Nein",IDCANCEL,107,43,50,14
+    PUSHBUTTON      "Ja",IDOK,45,43,50,14
+    CONTROL         "Diese Warnung immer anzeigen",IDC_ALWAYS_WARN,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,45,63,115,10
+    ICON            IDI_EXCLAMATION_ICON,IDC_STATIC,7,7,20,20
+    LTEXT           "Sind Sie sicher, daß Sie RoboMX beenden wollen?",
+                    IDC_STATIC,45,7,147,17
+    LTEXT           "Es sind noch Fenster geöffnet",IDC_STATIC,45,26,145,8
+END
+
+IDD_CONNECT DIALOGEX 0, 0, 306, 155
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Verbinden mit..."
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "&Raum",IDC_STATIC_ROOM,12,22,37,8
+    COMBOBOX        IDC_ROOM,62,20,153,134,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Verlauf leeren",IDC_CLEAR,220,19,71,14
+    LTEXT           "&Login",IDC_STATIC,12,42,18,8
+    EDITTEXT        IDC_LOGIN,62,39,104,14,ES_AUTOHSCROLL
+    CONTROL         "Raum wird mit &MXChatd betrieben",IDC_MXCHATD,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,41,116,10
+    LTEXT           "&Name",IDC_STATIC_USERNAME,12,88,37,8
+    EDITTEXT        IDC_USERNAME,62,85,104,14,ES_AUTOHSCROLL
+    LTEXT           "&Dateien",IDC_STATIC_FILES,172,88,30,8
+    EDITTEXT        IDC_FILES,208,85,83,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "&WPN Benutzernamen verwenden.",IDC_USE_WPNNAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,107,105,10
+    LTEXT           "&Typ",IDC_STATIC_LINE,166,108,36,8
+    COMBOBOX        IDC_LINE,208,106,83,259,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,177,134,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,241,134,50,14
+    GROUPBOX        "Raum Einstellungen",IDC_STATIC,7,7,291,53
+    GROUPBOX        "Benutzer Einstellungen",IDC_STATIC_USERSETUP,7,71,292,
+                    52
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,128,20,20
+    PUSHBUTTON      "RoboMX [:]",IDC_STATIC_RMX,62,134,104,14,WS_DISABLED | 
+                    NOT WS_TABSTOP
+END
+
+IDD_EDIT_ROOM_FILTER DIALOGEX 0, 0, 202, 173
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Raumfilter Einrichten"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,85,152,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,145,152,50,14
+    EDITTEXT        IDC_ADD_BOX,7,41,128,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Hinzufügen",IDC_ADD,139,41,50,14
+    LISTBOX         IDC_IGNORED,7,57,128,91,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Löschen",IDC_REMOVE,139,57,50,14
+    LTEXT           "Namen oder Namensteil / Thema eingeben, der aus der Raumliste gefiltert werden Soll. Wildcards erlaubt (* und ?)",
+                    IDC_STATIC,7,7,142,32
+END
+
+IDD_IGNORED_USERS DIALOGEX 0, 0, 196, 172
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Ignorierte Benutzer"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_ADD_BOX,7,51,128,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Hinzufügen",IDC_ADD,139,51,50,14
+    LISTBOX         IDC_IGNORED,7,67,128,81,LBS_SORT | LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Löschen",IDC_REMOVE,139,67,50,14
+    DEFPUSHBUTTON   "OK",IDOK,85,151,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,139,151,50,14
+    LTEXT           "Geben Sie den Namen oder Namensteil des Nutzers ein, der ignoriert werden soll. (Die letzten 5 Ziffern im Namen nicht eingeben). Wildcards erlaubt (* und ?)",
+                    IDC_STATIC,7,7,142,43
+END
+
+IDD_LINK_WARNING DIALOGEX 0, 0, 226, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "Link Warnung"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Nein",IDCANCEL,122,101,50,14
+    PUSHBUTTON      "Ja",IDOK,59,101,50,14
+    CONTROL         "&Diese Warnung immer anzeigen",IDC_ALWAYS_SHOW_WARNING,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,59,120,160,10
+    ICON            IDI_SECURITY,IDC_STATIC,7,7,20,20
+    LTEXT           "Sie haben auf einen Link geklickt, der folgende Adresse in ihrem Internetbrowser öffnen wird:",
+                    IDC_STATIC,36,7,183,18
+    EDITTEXT        IDC_URL,36,31,167,14,ES_AUTOHSCROLL
+    LTEXT           "Das Runterladen von Dateien aus dem Internet kann gefährlich sein, da diese Viren und Trojaner enthalten können, die Ihren Computer beschädigen können",
+                    IDC_STATIC,36,50,183,25
+    LTEXT           "Wollen Sie den Link oben wirklich öffnen?",IDC_STATIC,
+                    36,78,183,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_RENAME DLGINIT
+BEGIN
+    IDC_LINE, 0x403, 8, 0
+0x6e55, 0x6e6b, 0x776f, 0x006e, 
+    IDC_LINE, 0x403, 6, 0
+0x3431, 0x342e, 0x004b, 
+    IDC_LINE, 0x403, 6, 0
+0x3832, 0x382e, 0x004b, 
+    IDC_LINE, 0x403, 6, 0
+0x3333, 0x362e, 0x004b, 
+    IDC_LINE, 0x403, 4, 0
+0x3635, 0x004b, 
+    IDC_LINE, 0x403, 9, 0
+0x3436, 0x204b, 0x5349, 0x4e44, "\000" 
+    IDC_LINE, 0x403, 10, 0
+0x3231, 0x4b38, 0x4920, 0x4453, 0x004e, 
+    IDC_LINE, 0x403, 6, 0
+0x6143, 0x6c62, 0x0065, 
+    IDC_LINE, 0x403, 4, 0
+0x5344, 0x004c, 
+    IDC_LINE, 0x403, 3, 0
+0x3154, "\000" 
+    IDC_LINE, 0x403, 3, 0
+0x3354, "\000" 
+    0
+END
+
+IDD_ADDFAV DLGINIT
+BEGIN
+    IDC_NETWORK, 0x403, 6, 0
+0x6957, 0x4d6e, 0x0058, 
+    0
+END
+
+IDD_CFG_CHANNELBAR DLGINIT
+BEGIN
+    IDC_TOOLTIPTYPE, 0x403, 12, 0
+0x6843, 0x6e61, 0x656e, 0x6c6c, 0x7369, 0x0074, 
+    IDC_TOOLTIPTYPE, 0x403, 32, 0
+0x6843, 0x6e61, 0x656e, 0x6c6c, 0x7369, 0x2074, 0x6152, 0x6d75, 0x4920, 
+0x666e, 0x2c6f, 0x4320, 0x6168, 0x7274, 0x7561, 0x006d, 
+    IDC_TOOLTIPTYPE, 0x403, 17, 0
+0x7250, 0x7669, 0x7461, 0x4e20, 0x6361, 0x7268, 0x6369, 0x7468, "\000" 
+    IDC_TOOLTIPTYPE, 0x403, 14, 0
+0x6144, 0x6574, 0x2069, 0x6546, 0x736e, 0x6574, 0x0072, 
+    IDC_TOOLTIPTYPE, 0x403, 14, 0
+0x6945, 0x736e, 0x6574, 0x6c6c, 0x6e75, 0x6567, 0x006e, 
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x4f53, 0x494c, 0x0044, 
+    IDC_BG_EFFECT, 0x403, 10, 0
+0x4748, 0x4152, 0x4944, 0x4e45, 0x0054, 
+    IDC_BG_EFFECT, 0x403, 10, 0
+0x4756, 0x4152, 0x4944, 0x4e45, 0x0054, 
+    IDC_BG_EFFECT, 0x403, 11, 0
+0x4348, 0x5247, 0x4441, 0x4549, 0x544e, "\000" 
+    IDC_BG_EFFECT, 0x403, 11, 0
+0x4356, 0x5247, 0x4441, 0x4549, 0x544e, "\000" 
+    IDC_BG_EFFECT, 0x403, 11, 0
+0x4833, 0x5247, 0x4441, 0x4549, 0x544e, "\000" 
+    IDC_BG_EFFECT, 0x403, 11, 0
+0x5633, 0x5247, 0x4441, 0x4549, 0x544e, "\000" 
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x4f4e, 0x5349, 0x0045, 
+    IDC_BG_EFFECT, 0x403, 10, 0
+0x4944, 0x4741, 0x4853, 0x4441, 0x0045, 
+    IDC_BG_EFFECT, 0x403, 7, 0
+0x5348, 0x4148, 0x4544, "\000" 
+    IDC_BG_EFFECT, 0x403, 7, 0
+0x5356, 0x4148, 0x4544, "\000" 
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x4248, 0x4d55, 0x0050, 
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x4256, 0x4d55, 0x0050, 
+    IDC_BG_EFFECT, 0x403, 9, 0
+0x4f53, 0x5446, 0x5542, 0x504d, "\000" 
+    IDC_BG_EFFECT, 0x403, 9, 0
+0x4148, 0x4452, 0x5542, 0x504d, "\000" 
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x454d, 0x4154, 0x004c, 
+    0
+END
+
+IDD_CFG_FORMAT DLGINIT
+BEGIN
+    IDC_TIME, 0x403, 26, 0
+0x3432, 0x6820, 0x756f, 0x7372, 0x6620, 0x726f, 0x616d, 0x2074, 0x6428, 
+0x6665, 0x7561, 0x746c, 0x0029, 
+    IDC_TIME, 0x403, 16, 0
+0x3231, 0x6820, 0x756f, 0x7372, 0x6620, 0x726f, 0x616d, 0x0074, 
+    IDC_ENCODING, 0x403, 23, 0
+0x4e41, 0x4953, 0x4320, 0x6168, 0x7372, 0x7465, 0x2820, 0x6564, 0x6166, 
+0x6c75, 0x2974, "\000" 
+    IDC_ENCODING, 0x403, 15, 0
+0x6142, 0x746c, 0x6369, 0x4320, 0x6168, 0x7372, 0x7465, "\000" 
+    IDC_ENCODING, 0x403, 22, 0
+0x6843, 0x6e69, 0x7365, 0x2065, 0x6942, 0x2067, 0x2035, 0x6843, 0x7261, 
+0x6573, 0x0074, 
+    IDC_ENCODING, 0x403, 33, 0
+0x6544, 0x6166, 0x6c75, 0x2074, 0x6843, 0x7261, 0x6573, 0x2074, 0x6e28, 
+0x746f, 0x6420, 0x6665, 0x7561, 0x746c, 0x3a20, 0x292d, "\000" 
+    IDC_ENCODING, 0x403, 19, 0
+0x6145, 0x7473, 0x7565, 0x6f72, 0x6570, 0x4320, 0x6168, 0x7372, 0x7465, 
+"\000" 
+    IDC_ENCODING, 0x403, 15, 0
+0x4247, 0x3332, 0x3231, 0x4320, 0x6168, 0x7372, 0x7465, "\000" 
+    IDC_ENCODING, 0x403, 14, 0
+0x7247, 0x6565, 0x206b, 0x6843, 0x7261, 0x6573, 0x0074, 
+    IDC_ENCODING, 0x403, 15, 0
+0x6148, 0x676e, 0x6c75, 0x4320, 0x6168, 0x7372, 0x7465, "\000" 
+    IDC_ENCODING, 0x403, 12, 0
+0x414d, 0x2043, 0x6843, 0x7261, 0x6573, 0x0074, 
+    IDC_ENCODING, 0x403, 12, 0
+0x454f, 0x204d, 0x6843, 0x7261, 0x6573, 0x0074, 
+    IDC_ENCODING, 0x403, 16, 0
+0x7552, 0x7373, 0x6169, 0x206e, 0x6843, 0x7261, 0x6573, 0x0074, 
+    IDC_ENCODING, 0x403, 16, 0
+0x6853, 0x7469, 0x696a, 0x2073, 0x6843, 0x7261, 0x6573, 0x0074, 
+    IDC_ENCODING, 0x403, 15, 0
+0x7953, 0x626d, 0x6c6f, 0x4320, 0x6168, 0x7372, 0x7465, "\000" 
+    IDC_ENCODING, 0x403, 16, 0
+0x7554, 0x6b72, 0x7369, 0x2068, 0x6843, 0x7261, 0x6573, 0x0074, 
+    IDC_BARTOP, 0x403, 34, 0
+0x6843, 0x6e61, 0x656e, 0x626c, 0x7261, 0x6920, 0x2073, 0x6e6f, 0x6220, 
+0x746f, 0x6f74, 0x206d, 0x666f, 0x7720, 0x6e69, 0x6f64, 0x0077, 
+    IDC_BARTOP, 0x403, 31, 0
+0x6843, 0x6e61, 0x656e, 0x626c, 0x7261, 0x6920, 0x2073, 0x6e6f, 0x7420, 
+0x706f, 0x6f20, 0x2066, 0x6977, 0x646e, 0x776f, "\000" 
+    0
+END
+
+IDD_CFG_USERTOOL DLGINIT
+BEGIN
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x4f53, 0x494c, 0x0044, 
+    IDC_BG_EFFECT, 0x403, 10, 0
+0x4748, 0x4152, 0x4944, 0x4e45, 0x0054, 
+    IDC_BG_EFFECT, 0x403, 10, 0
+0x4756, 0x4152, 0x4944, 0x4e45, 0x0054, 
+    IDC_BG_EFFECT, 0x403, 11, 0
+0x4348, 0x5247, 0x4441, 0x4549, 0x544e, "\000" 
+    IDC_BG_EFFECT, 0x403, 11, 0
+0x4356, 0x5247, 0x4441, 0x4549, 0x544e, "\000" 
+    IDC_BG_EFFECT, 0x403, 11, 0
+0x4833, 0x5247, 0x4441, 0x4549, 0x544e, "\000" 
+    IDC_BG_EFFECT, 0x403, 11, 0
+0x5633, 0x5247, 0x4441, 0x4549, 0x544e, "\000" 
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x4f4e, 0x5349, 0x0045, 
+    IDC_BG_EFFECT, 0x403, 10, 0
+0x4944, 0x4741, 0x4853, 0x4441, 0x0045, 
+    IDC_BG_EFFECT, 0x403, 7, 0
+0x5348, 0x4148, 0x4544, "\000" 
+    IDC_BG_EFFECT, 0x403, 7, 0
+0x5356, 0x4148, 0x4544, "\000" 
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x4248, 0x4d55, 0x0050, 
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x4256, 0x4d55, 0x0050, 
+    IDC_BG_EFFECT, 0x403, 9, 0
+0x4f53, 0x5446, 0x5542, 0x504d, "\000" 
+    IDC_BG_EFFECT, 0x403, 9, 0
+0x4148, 0x4452, 0x5542, 0x504d, "\000" 
+    IDC_BG_EFFECT, 0x403, 6, 0
+0x454d, 0x4154, 0x004c, 
+    0
+END
+
+IDD_CONNECT DLGINIT
+BEGIN
+    IDC_LINE, 0x403, 8, 0
+0x6e55, 0x6e6b, 0x776f, 0x006e, 
+    IDC_LINE, 0x403, 6, 0
+0x3431, 0x342e, 0x004b, 
+    IDC_LINE, 0x403, 6, 0
+0x3832, 0x382e, 0x004b, 
+    IDC_LINE, 0x403, 6, 0
+0x3333, 0x362e, 0x004b, 
+    IDC_LINE, 0x403, 4, 0
+0x3635, 0x004b, 
+    IDC_LINE, 0x403, 9, 0
+0x3436, 0x204b, 0x5349, 0x4e44, "\000" 
+    IDC_LINE, 0x403, 10, 0
+0x3231, 0x4b38, 0x4920, 0x4453, 0x004e, 
+    IDC_LINE, 0x403, 6, 0
+0x6143, 0x6c62, 0x0065, 
+    IDC_LINE, 0x403, 4, 0
+0x5344, 0x004c, 
+    IDC_LINE, 0x403, 3, 0
+0x3154, "\000" 
+    IDC_LINE, 0x403, 3, 0
+0x3354, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CFG_COLORS, DIALOG
+    BEGIN
+        HORZGUIDE, 220
+    END
+
+    IDD_CFG_FORMAT, DIALOG
+    BEGIN
+        VERTGUIDE, 14
+        HORZGUIDE, 149
+    END
+
+    IDD_CFG_WPN, DIALOG
+    BEGIN
+        VERTGUIDE, 186
+        VERTGUIDE, 301
+        HORZGUIDE, 17
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "RoboMX [:]"
+    AFX_IDS_IDLEMESSAGE     "Bereit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Einen neuen Raum betreten\nEinen neuen Raum betreten"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Aktives Dokument schließen\nSchließen"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Programminformationen und Copyright Informationen anzeigen\nÜber"
+    ID_APP_EXIT             "RoboMX beenden\nRoboMX beenden"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Zum nächsten Fenster schalten\nNächstes"
+    ID_PREV_PANE            "Zum vorherigen Fenster schalten\nVoriges"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Fenster anordnen\nFenster anordnen"
+    ID_WINDOW_CASCADE       "Fenster überlappend anordnen\nÜberlappend"
+    ID_WINDOW_TILE_HORZ     "Fenster nebeneinander anordnen\nNebeneinander"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Werkzeugleiste anzeigen\nWerkzeugleiste anzeigen"
+    ID_VIEW_STATUS_BAR      "Statuszeile anzeigen\nStatuszeile anzeigen"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Fenstergröße verändern"
+    AFX_IDS_SCMOVE          "Fensterposistion ändern"
+    AFX_IDS_SCMINIMIZE      "Fenster minimieren"
+    AFX_IDS_SCMAXIMIZE      "Fenster Maximieren"
+    AFX_IDS_SCNEXTWINDOW    "Zum nächsten Fenster schalten\nNächstes"
+    AFX_IDS_SCPREVWINDOW    "Zum vorherigen Fenster schalten\nVorheriges"
+    AFX_IDS_SCCLOSE         "Aktives Fenster schließen"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    IDS_SYSTEMUPTIME        "System läuft %02d Tage %02d Stunden %02d Minuten %02d Sekunden %03d Millisekunden"
+    IDC_WPNNAME             "Wenn Sie in einem Raum nicht den WPN Benutzernamen verwenden,\nkönnen Sie in diesem Raum keine Privaten Nachrichten empfangen oder\nBenutzer durchsuchen."
+    IDS_MCMARAWNAMEWARNING  "Diese Funktion arbeitet nicht mit allen Servern fehlerfrei. Die Funktion is experimentell und kann unter Umständen Namen mit Farbkodes zum falschen 'echten' Namen zuordnen."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PREV                 "Zum vorherigen Fenster schalten\nVorheriges Fenster"
+    ID_RECONNECT            "Die Verbindung zum Raum neu aufbauen\nNeu verbinden"
+    ID_RENAME               "Benutzerdetails anpassen\nUmbennen"
+    ID_ROBOMX_CONNECTNEWCHANNEL "Einen neuen Raum betreten\nRaum betreten"
+    ID_SEND_FAILED          "Die Gegenstelle hat die Nachricht nicht akzeptiert."
+    ID_USER_BROWSE          "Dateien dieses Bentuzers auflisten.\nDurchsuchen"
+    ID_USERLIST_ADDADMIN    "Adminrechte verleihen"
+    ID_USERLIST_BAN         "Benutzer verbannen"
+    ID_USERLIST_COPYUSERNAME "Benutzernamen in die Zwischenablage kopieren"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DISPLAYINCHANNEL_PING "Ping zum Server im Raum anzeigen"
+    ID_EXIT                 "Raum verlassen\nVerlassen"
+    ID_HELP_VISITHOMEPAGE   "RoboMX Homepage"
+    ID_LIST_ADDTOFAVORITES  "Zu Favoriten hinzufügen"
+    ID_LIST_EDITHIGHLIGHTKEYWORDS 
+                            "Schlüsselworte anpassen, die in der Raumliste hervorgehoben werden"
+    ID_LIST_GROUPFAVORITESATTOPOFLIST 
+                            "Favoriten immer oben in der Liste anordnen"
+    ID_LIST_HIGHLIGHT       "Schlüsselworte hervorheben"
+    ID_LIST_LOCKFOCUSONSELECTION "Fokus auf ausgewählten Raum fixieren"
+    ID_LIST_REMOVEFROMFAVORITES "Aus Favoriten löschen"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_FULL_SCREEN     "Vollbildmodus an-/ausschalten"
+    ID_VIEW_IGNOREDUSERS    "Ingorierte Benutzer zeigen/anpassen"
+    ID_VIEW_LOGFILE         "Logdatei anzeigen"
+    ID_VIEW_OPTIONS         "Einstellungen anpassen\nAnpassen"
+    ID_VIEW_SYSTEMCONSOLE   "Systemkonsole anzeigen"
+    ID_VIEW_TRUSTEDUSERS    "Freunde anzeigen"
+    ID_WPN_REFRESH          "WPN Verbindung neu aufbauienn\nWPN neu verbinden"
+    ID_WPN_STATUS           "WPN Verbidnung auf-/abbauen\nWPN verbinden"
+    ID_LIST_CACHEONLYFAVORITES "Nur Favoriten zwischenspeichern (empfohlen)"
+    ID_DISPLAYINCHANNEL_STATISTICS "Statisk über den Raum anzeigen"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHANNEL_CHANNELLIST  "Lädt eine Liste aller Chaträume runter\nRäume auflisten"
+    ID_CHANNELS_FILTER      "Räume filtern"
+    ID_CHATROOM_ADDTOAUTOJOIN "Raum automatisch verbinden"
+    ID_CHATROOM_ASCIIARTDESIGN "ASCII Bild erstellen"
+    ID_CHATROOM_CLEARSCREEN "Text löschen"
+    ID_CHATROOM_COPYROOMNAME "Namen kopieren"
+    ID_CHATROOM_DISPLAYINCHANNEL_AVERAGELAG 
+                            "Zeitverzögerung zwischen Ihnen und dem Server\nGeschätzte Verzögerung"
+    ID_CHATROOM_DISPLAYINCHANNEL_SYSTEMINFO 
+                            "Zeigt Infos über Windows und Ihren Computer\nSystem Info"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LIST_UPDATELIST      "Aktualisieren"
+    ID_MUTE                 "Soundeffekte an/aus\nSoundeffekte an/aus"
+    ID_MYFILE_NEW           "Einen neuen Raum betreten\nRaum betreten"
+    ID_NEXT                 "Nächstes Fenster\nNächstes Fenster"
+    ID_POPUP_COPYROOMNAME   "Kopiere Namen"
+    ID_POPUP_COPYTOPIC      "Kopiere Thema"
+    ID_POPUP_LOOPBACKJOIN   "Raum betreten"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_USERLIST_CUSTOMIZETHISMENU "Menü anpassen"
+    ID_USERLIST_IGNORE      "Ignorieren"
+    ID_USERLIST_KICK        "Rauswerfen"
+    ID_USERLIST_KICKBAN     "Rauswerfen und verbanne"
+    ID_USERLIST_PRINTIP     "IP Adresse zeigen"
+    ID_USERLIST_PRINTUSERSTAT "Zeige Statistik"
+    ID_USERLIST_READUSERMESSAGE "Nachricht lesen"
+    ID_USERLIST_REDIRECT    "Umleiten"
+    ID_USERLIST_REMOVEADMIN "Adminrechte geben"
+    ID_USERLIST_SENDMESSAGE "Nachricht schicken\nPM"
+    ID_USERLIST_UNBAN       "Verbannung aufheben"
+    ID_USERLIST_UNIGNORE    "Ingorieren aufheben"
+    ID_USERLIST_WHOIS       "Benutzerinfos abfragen\nWhois"
+    ID_VIEW_AUTOJOINMANAGER "Raumverwaltung anzeigen"
+    ID_VIEW_CHANNELBAR      "Raumleiste anzeigen"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CHATROOM_DISPLAYINCHANNEL_SYSTEMUPTIME 
+                            "Wie lange läuft Windows\nZeit seit Neustart"
+    ID_CHATROOM_DISPLAYINCHANNEL_WINAMPSONG 
+                            "Lied das Winamp gerade spielt anzeigen"
+    ID_CHATROOM_REJOIN      "Raum neu betreten"
+    ID_DISPLAYINCHANNEL_LURKMETER "Zeigen wie gesprächig der Raum ist"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_BG_LOAD       "Fehler: Konnte Hintergrundbild nicht laden."
+    IDS_ERROR_COM           "Fehler beim Initialisieren des COM Interface. RoboMX kann nicht gestartet werden."
+    IDS_ERROR_COMCTRL       "Common Controls konnte nicht initialisiert werdeb,"
+    IDS_ERROR_CONNECTFORCED "Fehler beim Verbinden mit angebener Primären Knoten."
+    IDS_ERROR_CONNECTING    "Fehler: RoboMX konnte keine Verbindung zu %s aufbauen. [%s]"
+    IDS_ERROR_FILE_GENERIC  "Fehler bei Dateioperation."
+    IDS_ERROR_FIXME         "Fixme: Unexpected stream state or unknown packet: '%s'"
+    IDS_ERROR_INITSPEECH    "Error initializing Text to Speech interface."
+    IDS_ERROR_INVALID_PLUGIN "Ungültiger Socket."
+    IDS_ERROR_KICKED        "Vielleicht sind Sie verbannt oder rausgeworfen?"
+    IDS_ERROR_LOGFILE_OPEN  "Konnte Logdatei nicht öffnen."
+    IDS_ERROR_LOGFILE_WRITE "Konnten nicht in Logdatei schreiben."
+    IDS_ERROR_LOGIN_KEY     "Fehler beim Schlüsselaustausch."
+    IDS_ERROR_LOGIN_REJECTED "Login abgewiesen :("
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_CHANNEL             "\nRoboMX\nRoboMX\n\n\nRoboMX.Document\nRoboMX.Document"
+    IDR_LIST                "\nRoboMX\nRoboMX\n\n\nRoboMX.Document\nRoboMX.Document"
+    IDR_MESSAGEVIEW_TMPL    "\nRoboMX\nRoboMX\n\n\nRoboMX.Document\nRoboMX.Document"
+    IDR_PM                  "\nRoboMX\nRoboMX\n\n\nRoboMX.Document\nRoboMX.Document"
+    IDR_SETTINGS            "\nRoboMX\nRoboMX\n\n\nRoboMX.Document\nRoboMX.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CHANNELSTATS2       "+ Betreten am %s\n+ %u Leute\n+ %u Nachrichten Total\n+ %u Nachrichten von mir (%d%%)\n+ Quasselmeter: %s\n+ Nachrichten/Sekunde: %.02f\n+ Host ist %s\n+ auf %s\n"
+    IDS_CHANNELSTATS3       "Ende der Statistik\n"
+    IDS_CLIENTDISC          "Klient geschlossen."
+    IDS_COMMAND_EXECUTED    "Kommando '%s' wurde ausgeführt\n"
+    IDS_COMMAND_NOTUNDERSTOOD 
+                            "Command '%s' not understood. Type Help for available commands\n\n"
+    IDS_CONNECTING          "Verbinde. Bitte warten..."
+    IDS_CONNECTION_RETRY    "Wiederhole Verbindungsversuch. (Versuch #%02d/%02d)."
+    IDS_CUSTOMIZE           "Menü anpassen.."
+    IDS_DESC                "Beschreibung"
+    IDS_DISPLAY_USERLEVEL   "&Benutzerlevel anzeigen"
+    IDS_EDIT_MENU           "RoboMX wird die Menüdatei jetzt in Notepad öffnen. Bitte passen Sie die RCMS Befehle an und speichern Sie die Datei. Dann müssen Sie den Raum neu betretetn. Die Befehlsreihenfolge nicht verändern!"
+    IDS_EMO_ACT             "Aktivierung"
+    IDS_EMO_FILE            "Bilddatei"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_WHOIS_1             "Whois %s"
+    IDS_WHOIS_2             "Online: %d Tage und %02d:%02d:%02d\nVerbindung: %s\nDateien %d\nWarteschlange: %s"
+    IDS_WHOIS_ERROR         "Whois Anfrage für %s fehlgeschlagen (Benutzer offline oder Host gewächselt)"
+    IDS_WINMX353_WRONGJOIN_WARNING 
+                            "Achtung: Sie haben die MXChatd kompatiblen Modus für diesen Raum benutzt. Um alle Features dieses Serves nutzen zu könenn Sollten sie den Raum normal betreten :)"
+    IDS_WORK                "Work"
+    IDS_WPN_CONNECTED       "WPN Verbunden."
+    IDS_WPN_CONNECTING      "WPN Verbinde"
+    IDS_WPN_DISCONNECTED    "WPN Offline."
+    IDS_WPN_WARNING         "Hinweis: Wenn Sie nicht mit dem WPN Verbunden sind, können Sie keine Privaten Nachrichten schicken oder empfangen, eine Raumliste runterladen und/oder Datein von Leuten durchsuchen"
+    IDS_ZZZZZZZZ            "zZzZZZZZzzZzZzz"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_LOGIN_UNKNOWN "Ooops. Was war das?"
+    IDS_ERROR_MISSING_INPUT "Fehler: Aktivierungstext und/oder Bilddatei eingeben."
+    IDS_ERROR_MX353ONLY     "Diese Funktion wird nur in WinMX 3.53 Räumen unterstützt."
+    IDS_ERROR_NAME_INVALID  "Name enthält ungültige Zeichen!"
+    IDS_ERROR_NAME_LONG     "Name ist zu lang. Name darf nicht länger als 39 Zeichen sein (Ohne die Nummern)."
+    IDS_ERROR_NAME_SHORT    "Name ist zu kurz."
+    IDS_ERROR_NAMES_EMPTY   "Achtung eine der Listen ist leer!"
+    IDS_ERROR_NETWORK       "Eine Netzwerkoperation ist fehlgeschlagen. %s"
+    IDS_ERROR_NO_CHATSERVER "Fehler: An der angebenen Adresse läuft kein Chatserver."
+    IDS_ERROR_NO_SELECTION  "Kein Eintrag ausgewählt!"
+    IDS_ERROR_NODEREQUIRED  "Sie müssen den Hostnamen und den TCP Port des Primären Knoten angeben, zu dem Sie eine Verbindung aufbauen wollen."
+    IDS_ERROR_PERMISSIONDENIED_SEND "You do not have permission to use '%s'"
+    IDS_ERROR_PLAYWAVE      "Fehler. Konnte %s nicht abspielen."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_SERVER_WRONGKEY "Ungültiger Schlüssel"
+    IDS_ERROR_TIMEOUT       "Verbindungszeitlimit überschritten."
+    IDS_ERROR_UNKNOWN_ID    "Oops, die ID 0x%08x ist unbekannt(%d)"
+    IDS_ERROR_WINSOCK       "Winsock Interface konnte nicht gestartet werden."
+    IDS_FILTEREDCHANNELS    "Angez. / Filter / Total %d/%d/%d"
+    IDS_FINISHED            "Fertig."
+    IDS_FIXME_NAME_ERROR    "Fix-me: Could not find user %s"
+    IDS_FIXME_UNKNOWN_COMMAND "Fixme: Unknown Command 0x%X len=%d cmd=%s"
+    IDS_GIVE_VOICE          "&Stimme geben"
+    IDS_HANDSHAKE_START     "Starte Verbindungsverhandlung"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_PING                "Ping server: bytes=%d time %sms TTL=%d"
+    IDS_PLUGIN              "Plugin"
+    IDS_PM_AWAY             "Ich bin gerade weg, %s."
+    IDS_PM_NOTIME_WRITES    "%s schreibt:\n"
+    IDS_PM_NOTIME_YOUWRITE  "Sie schreiben:\n"
+    IDS_PM_TIME_WRITES      "[%s] %s schreibt:\n"
+    IDS_PM_TIME_YOUWRITE    "[%s] Sie schreiben:\n"
+    IDS_RECONNECTING        "Verbinde neu. Bitte warten..."
+    IDS_REDIRECT_USER       "Umleiten"
+    IDS_REDIRECTING         "Umleitung nach %s"
+    IDS_REJOIN_ROOM         "Wiederverbinde "
+    IDS_REMOVE_PLUGIN       "Entferne Plugin '%s'?"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "RoboMX"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_HIDDENLISTING       "+h: %s"
+    IDS_HIDDENLISTINGEND    "Hidden User-Listing complete."
+    IDS_HIDDENLISTINGSTART  "List of hidden users:"
+    IDS_HILITE_LOADED       "Hilight word-list was loaded."
+    IDS_IGNORED             "'%s' ignoriert"
+    IDS_IGNORED_MX353       "/me hat '%s' ignoriert"
+    IDS_IMAGE_FILTER        "Bild Dateien (*.bmp;*.jpg;*.gif;*.png;*.tiff)|*.bmp;*.jpg;*.gif;*.png;*.tiff|Alle Dateien (*.*)|*.*||"
+    IDS_KICKBAN_5           "Für 5 Minuten Rauswerfen und Verbannen"
+    IDS_LIST                "Raumliste"
+    IDS_LOG_START           "\n----- Log Start ----\n\n"
+    IDS_LOGIN_OK            "Login erfolgreich :)"
+    IDS_LURKMETER           "Quasselmeter misst %s in diesem Raum."
+    IDS_LURKMETER1          "%f nL"
+    IDS_LURKMETER2          "(undendlich) nL"
+    IDS_MODES               "Raum Modus"
+    IDS_NEWPM               "Sie haben eine neue Nachricht von %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_REMOVE_VOICE        "&Knebeln"
+    IDS_ROOMLIST            "Raum,300;Benutzer,50;Limit,50;Login,50;Ping,50;Thema,450"
+    IDS_ROOMRENAME          "Raumname geändert von %s nach %s"
+    IDS_ROOMS_ETA           "%04d Räume (ETA: %s, %s, %s)"
+    IDS_RTF_BLOCK           "Ich bin doof und habe versucht RTF Codes zu schreiben. RoboMX war so schlau den Mist abzufangen. Bitte kickt mich!"
+    IDS_SEND_WHOIS          "Whois Abfrage geschickt für %s..."
+    IDS_SENDPM              "PM %s"
+    IDS_SERVER_MCMA         "Info: Raum unterstützt MXFools Protokollerweiterung."
+    IDS_SERVER_RCMS         "Info: Raum unterstützt RCMS Befehle."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_SERVER_WINMX353     "Info: Raum benutzt WinMX 3.53 Protokoll"
+    IDS_SERVERNEW           "Info: Raum wird gehostet mit %s %s"
+    IDS_SETTINGS            "Einstellungen"
+    IDS_SLEEP               "Sleep"
+    IDS_SMOKE               "Smoke"
+    IDS_SOUND               "Sound"
+    IDS_STORE               "Run to the store"
+    IDS_TOOL_JOINVARIABLES  "Sie können hier die folgenden Variablen benutzen:\n\n%NAME%, %RAWNAME%, %IP%, %IPBRACKETS%,\n%HOSTNAME%, %HOSTNAMEBRACKETS%, %FILES%,\n%LINE% %USERS% %ROOMNAME%\n%TIME% %DATE% %ROBOMX%"
+    IDS_TOOL_MSGVARIABLES   "Sie können hier die folgenden Variablen benutzen:\n\n%WA-ARTIST% %WA-SONG% %WA-ALBUM% %WA-TRACK%\n%WA-GENRE% %WA-YEAR% %WA-COMMENT%\n%WA-VERSION% %WA-ELATIME%\n%WA-REMTIME% %WA-TOTALTIME% %WA-SAMPLERATE%\n%WA-BITRATE% %WA-CHANNELS% %WA-STATUS% %WA-VIDRES%\n%TIME% %DATE% %ROOMNAME% %USERS%"
+    IDS_TOOL_PARTVARIABLES  "Sie können hier die folgenden Variablen benutzen:\n\n%NAME%, %RAWNAME%, %IP%, %IPBRACKETS%,\n %HOSTNAME%, %HOSTNAMEBRACKETS%, %FILES%,\n%LINE% %STAYTIME% %USERS% %ROOMNAME%\n%TIME% %DATE% %ROBOMX%"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ERROR_PLUGIN_INIT   "Konnte %s nicht initialisieren."
+    IDS_ERROR_PLUGIN_LOAD   "Konnte das Plugin %s nicht laden."
+    IDS_ERROR_PLUGIN_OLDAPI "Fehler: '%s' hat eine veraltete Schnittstellenversion (0x%03X). Diese RoboMX Version benötigt 0x%03X."
+    IDS_ERROR_REDIRECT_ROOMNAMEINVALID 
+                            "%s scheint ein ungültiger Raumname zu sein. Umleitung gestoppt."
+    IDS_ERROR_REMOVE_PLUGIN "Konnte Plugin '%s' nicht löschen."
+    IDS_ERROR_ROOMNAME_EMPTY "Raumname darf nicht leer sein!"
+    IDS_ERROR_ROOMNAME_INVALID "Ungültiger Raumname!"
+    IDS_ERROR_SELECT_PLUGIN "Sie müssen erst ein Plugin wählen."
+    IDS_ERROR_SELECTEVENT   "Bitte erst Auswahl treffen!"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_TOOL_WAVARIABLES    "Sie können hier die folgenden Variablen benutzen:\n\n%WA-ARTIST% %WA-SONG% %WA-ALBUM% %WA-TRACK%\n%WA-GENRE% %WA-YEAR% %WA-COMMENT%\n%WA-VERSION% %WA-ELATIME%\n%WA-REMTIME% %WA-TOTALTIME% %WA-SAMPLERATE%\n%WA-BITRATE% %WA-CHANNELS% %WA-STATUS% %WA-VIDRES%"
+    IDS_TOOL_WILDCARDS      "Sie können Wildcards benutzen (? und *)."
+    IDS_TOPIC               "Thema: %s"
+    IDS_TOPIC2              "Thema"
+    IDS_TRIGGER             "Schalter"
+    IDS_TV                  "Watching TV"
+    IDS_UNIGNORE            "'%s' wird nicht mehr ignoriert"
+    IDS_UNIGNORE_MX353      "/me kann '%s' wieder lesen"
+    IDS_UPDATE_AVAILABLE    "Es ist eine neue RoboMX Version verfügbar!\n\n -> Sie benutzen %s\n -> Die neueste Version ist %s\n\nHier klicken, um die Downloadseite zu öffnen."
+    IDS_USERLIST_NODE       "Name,136;Dateien,60;Geschw.,80;IP (Admin/Op),120;Hostname (Admin/Op),150;Node-IP,120;Node-Port,80"
+    IDS_USERLIST_SHORT      "Name,136;Dateien,60;Geschw.,80;IP (Admin/Op),120;Hostname (Admin/Op),150"
+    IDS_USERMNU             "Eigene Befehler"
+    IDS_USERS               "%03d Leute"
+    IDS_WAVE_FILTER         "Wave Audio Dateien (*.wav)|*.wav|Alle Dateien (*.*)|*.*||"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ADD                 "Füge hinzu "
+    IDS_AUTHOR              "Authr"
+    IDS_AUTOJOIN_ADD        "Raum %s zu Autoverbindungsliste hinzugefügt."
+    IDS_AUTOJOIN_REMOVE     "Raum %s aus Autoverbindungstliste entfernt."
+    IDS_AVERAGE_LAG         "Geschätzte Zeitverzögerung: %u ms"
+    IDS_AVERAGE_LAG_CHAT    "Geschätzte Zeitverzögerung in diesem Raum ist %d Sekunden und %03d Millisekunden"
+    IDS_AWAY_BACK           "/me ist zurück von »%s«. %s war weg für %s"
+    IDS_AWAY_CONTROL        "&Abwesenheit"
+    IDS_AWAY_SILENTBACK     "Sie sind jetzt zurück von »%s«. Sie waren weg für %s\n"
+    IDS_AWAYCTRL            "/me ist weg, %s"
+    IDS_BANLISTINGEND       "Ban-listing complete."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_BATH                "Bathroom"
+    IDS_BEER                "Beer"
+    IDS_BITMAP_FILTER       "Bild Datei (*.bmp;)|*.bmp;|Alle Dateien (*.*)|*.*||"
+    IDS_BROWSE_CMPLT        "%s:  %04d Datei(en) freigegeben"
+    IDS_BROWSE_HEAD         "Datei,350;Typ,60;Größe (KB),80;Bitrate (kbps),50;Samplerate (kHz),80;Länge,60"
+    IDS_BROWSE_TITLE        "%s' Dateien"
+    IDS_CFG_COLORS          "Farben"
+    IDS_CFG_EXT             "Plugins"
+    IDS_CFG_FUN             "Spaß :-)"
+    IDS_CFG_GENERAL         "Allgemein"
+    IDS_CFG_MSG             "Nachrichten"
+    IDS_CFG_SND             "Systemklänge"
+    IDS_CFG_WELCOME         "Willkommen"
+    IDS_CHANNELLIST         "Raumliste"
+    IDS_CHANNELSTATS1       "Statistik für %s"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_BROWSEVIEW_TMPL     "BrowseView\nBrowseView\nBrowseView\nBrowseView Files (*.bro)\nbro\nBrowseView.Document\nBrowseView Document"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_SELECTION_NOSCROLL  "Fokus auf auswahl fixieren"
+    IDS_DISPLAY_CHANNELSTAT "/me Raum betreten am %s  | %u Leute im Raum  |  %u Nachrichten Total, %u Nachrichten (%d%%) von mir  |  Quasselmeter: %s  |  Nachrichten/Sekunde: %.02f"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_DISPLAYINCHANNEL_EXTENDEDSYSTEMINFO 
+                            "Windows Version, CPU, RAM, Festplatteninformation und den Computernamen im Raum zeigen."
+    ID_CTRLTAB              "Nächstes Fenster\nNächstes"
+    ID_POPUP_EDITFAVORITEENTRY "Infos anpassen"
+    ID_ADVANCED_TRUSTUSER   "Vertrauen und zum Freund machen. Freunden dürfen Ihnen Private Nachrichten schicken."
+    ID_ADVANCED_REMOVETRUSTED "Benutzer misstrauen"
+    ID_LIST_SHOWSTATISTICS  "Statistik über das WPN anzeigen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDC_TOOL_ROOM           "Sie können auch folgende Syntax verwenden\nRaumname_IP:PORT\nBeispiel: testroom_127.0.0.2:6699"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_LIST_COPYSTATISTICS  "WPN Statistik in die Zwischenablage kopieren"
+    ID_DISPLAYINCHANNEL_ONLINETIME 
+                            "Zeit die RoboMX Online ist im Raum anzeigen"
+    ID_HELP_CHANGELOG       "Änderungslog anzeigen"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_ENTERREASON         "Grund angeben"
+    IDS_INI_FILTER          "Konfigurationsdateien (*.ini)|*.ini|Alle Dateien (*.*)|*.*||"
+    IDS_STATUSPREFIXLENGTHWARNING 
+                            "Achtung: Wenn das Namenspräfix/-suffix angewandt wird, ist ihr Name zu lang und wird abgeschnitten. Ändern sie entweder Ihren Namen oder den Namenspräfix/-suffix."
+    ID_ADVANCED_CLEARCACHEDROOMS 
+                            "Zwischengespeicherte Räume aus Liste entfernen"
+    ID_ADVANCED_MANUALLYADDROOMTOCACHE 
+                            "Einen Raum manuell zu Liste hinzufügen"
+    ID_ADVANCED_REMOVECACHEDFLAG "Raum als ""Aktiv"" markieren"
+    ID_ADVANCED_REMOVEFROMCACHE "Raum aus Zwischenspeicher löschen"
+    IDS_LOADFILES           " Lade Dateien..."
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CFG_EMO             "Smileys"
+    IDS_CFG_WPN             "Netzwerk"
+    IDS_NEW_PM_TOOL         "Neue Private Nachricht"
+    IDS_NEW_PM_TEXT         "Sie haben eine Neue Nachricht"
+    IDS_NEW_PM_TITLE        "RoboMX [Neue PM]"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_CFG_CHATSOUND       "Klänge"
+    IDS_MISSING_INPUT       "Sie müssen erst ein Schalter und/oder eine Datei angeben."
+    IDS_CFG_QUICKMSG        "Schnellnachricht"
+    IDS_CFG_FORMAT          "Aussehen"
+    IDS_CFG_CHANNELBAR      "Raumleiste"
+    IDS_SPECIFYFIRST        "Bitte erst Raum und Bild angeben."
+    IDS_ERROR_CREATETOOL    "Fehler beim Erstellen des Benutzertooltips"
+    IDS_CFG_USERTOOL        "Benutzer Tooltip"
+    IDS_CFG_USERLIST        "Benutzerliste"
+    IDS_PICINFO             "Bilder können nur für Chaträume angepasst werden."
+    IDS_AWAYREQUIRED        "Sie müssen sowohl Menüeintrag als auch einen Grund angeben!"
+    IDS_CFG_AWAY            "Abwesenheit"
+END
+
+#endif    // German (Germany) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RoboMX.ico"
+IDI_PM_SYSTRAY          ICON                    "res\\pm_systray.ico"
+IDI_PM2_SYSTRAY         ICON                    "res\\pm2_systray.ico"
+IDI_AWAY                ICON                    "res\\away.ico"
+IDR_SETTINGS            ICON                    "res\\settings.ico"
+IDR_CHANNEL             ICON                    "res\\metistyp.ico"
+IDR_LIST                ICON                    "res\\list.ico"
+IDI_ANI                 ICON                    "res\\Ani.ico"
+IDR_BROWSEVIEW_TMPL     ICON                    "res\\BrowseView.ico"
+IDR_MESSAGEVIEW_TMPL    ICON                    "res\\MessageView.ico"
+IDI_EXCLAMATION_ICON    ICON                    "res\\exclamation.ico"
+IDI_SECURITY            ICON                    "res\\security.ico"
+IDI_USERSETUP           ICON                    "res\\usersetup.ico"
+IDI_ROOM                ICON                    "res\\room.ico"
+IDI_LOGFILE             ICON                    "res\\logfile.ico"
+IDI_DISCONNECTED        ICON                    "res\\disconnected.ico"
+IDI_CONNECTED           ICON                    "res\\connected.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FILETYPES           BITMAP                  "res\\filetypes.bmp"
+IDR_MAINFRAME           BITMAP                  "res\\channel.bmp"
+IDR_FULLSCREEN          BITMAP                  "res\\fullscreenbar.bmp"
+IDB_MENU_BUTTON         BITMAP                  "res\\mnu-button.bmp"
+IDB_CHANNELLIST         BITMAP                  "res\\channellist.bmp"
+IDB_ABOUTBG             BITMAP                  "res\\about.bmp"
+IDB_PREVIEW             BITMAP                  "res\\preview.bmp"
+IDB_TOOLBAR256          BITMAP                  "res\\toolbar256.bmp"
+IDB_TOOLBAR256_DEACT    BITMAP                  "res\\toolbar256-deact.bmp"
+IDB_PREFERENCES         BITMAP                  "res\\preferences.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\RoboMX.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_WPN_STATUS
+    BUTTON      ID_WPN_REFRESH
+    BUTTON      ID_CHANNEL_CHANNELLIST
+    SEPARATOR
+    BUTTON      ID_MYFILE_NEW
+    BUTTON      ID_RECONNECT
+    BUTTON      ID_FILE_CLOSE
+    SEPARATOR
+    BUTTON      ID_RENAME
+    BUTTON      ID_MUTE
+    SEPARATOR
+    BUTTON      ID_CTRLTAB
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_FULLSCREEN TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_VIEW_FULL_SCREEN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+1                       RT_MANIFEST             "RoboMX.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR                  "res\\hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "L",            ID_CHANNEL_CHANNELLIST, VIRTKEY, CONTROL, NOINVERT
+    VK_F4,          ID_CHATROOM_DISPLAYINCHANNEL_AVERAGELAG, VIRTKEY, 
+                                                    NOINVERT
+    VK_F3,          ID_CHATROOM_DISPLAYINCHANNEL_SYSTEMINFO, VIRTKEY, 
+                                                    NOINVERT
+    VK_F2,          ID_CHATROOM_DISPLAYINCHANNEL_SYSTEMUPTIME, VIRTKEY, 
+                                                    NOINVERT
+    VK_F8,          ID_CHATROOM_DISPLAYINCHANNEL_WINAMPSONG, VIRTKEY, 
+                                                    NOINVERT
+    VK_TAB,         ID_CTRLSHIFTTAB,        VIRTKEY, SHIFT, CONTROL, 
+                                                    NOINVERT
+    VK_TAB,         ID_CTRLTAB,             VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_DELETE_CHANNEL,      VIRTKEY, SHIFT, NOINVERT
+    VK_F10,         ID_DISPLAYINCHANNEL_EXTENDEDSYSTEMINFO, VIRTKEY, 
+                                                    NOINVERT
+    VK_F6,          ID_DISPLAYINCHANNEL_LURKMETER, VIRTKEY, NOINVERT
+    VK_F9,          ID_DISPLAYINCHANNEL_ONLINETIME, VIRTKEY, NOINVERT
+    VK_F5,          ID_DISPLAYINCHANNEL_PING, VIRTKEY, NOINVERT
+    VK_F7,          ID_DISPLAYINCHANNEL_STATISTICS, VIRTKEY, NOINVERT
+    "N",            ID_MYFILE_NEW,          VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "R",            ID_RECONNECT,           VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_SHIFTENTER,          VIRTKEY, CONTROL, NOINVERT
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Sys. Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CFG_PEERCACHE DIALOGEX 0, 0, 218, 158
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "PeerCache Server bearbeiten..."
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "&PeerCache Server hinzufügen (IP oder Hostnamen)",
+                    IDC_STATIC,7,7,204,8
+    EDITTEXT        IDC_ADD_SERVER,7,17,149,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Hinzufügen",IDC_BUTTON1,161,17,50,14
+    LISTBOX         IDC_SERVERS,7,35,149,100,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Löschen",IDC_DELETE,161,35,50,14
+    DEFPUSHBUTTON   "OK",IDOK,99,137,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,161,137,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_CFG_PEERCACHE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 211
+        VERTGUIDE, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+        HORZGUIDE, 24
+        HORZGUIDE, 35
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Neutral (Sys. Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\RoboMX.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,105 @@
+RoboMX channel commands (RoboMX 0.5)
+
+
+Channel modes can be set from the server-console or from channel operators
+
+usage:
+
+/mode +t
+
++ adds the option, - removes the option.
+
+list of channel available options:
+++++++++++++++++++++++++++++++++++
+
++t  : means "topic". If this is set, then only operators can change the topic. 
+          /mode +t
+      
++k  : A channel set +k requires a keyword to enter. A key may contain printable 
+      and non printable characters. 
+          /mode +k <key>
+          /mode -k <key>
+
++m  : If you set the channel +m, then only operators or people who an operator has set 
+      +v can talk on channel. This is a useful way of dealing with an attack by floodbots.
+
++e  : In a channel set +e operators can exile users to another room (/exile <user>... see below)
+          /mode +e <targetroom>
+          /mode -e 
+
++v  : The +v mode simply gives someone on a +m channel permission to send text to the channel, 
+      even if he or she is not an op. (All ops automatically have permission to speak.)
+
++o  : The +o mode is set or unset for particular users. Making a user +o gives the user 
+      operator status on the channel. Making a user -o removes operator status
+	  /mode +o <user>
+	  /mode -o <user>
+
++l  : This sets a limit on the number of people that can join the channel. This mode does not 
+      really guarantee that no more than the set number of people will be on channel. 
+      For instance, setting this mode does not kick anyone off if the channel is over the limit. 
+
++b  : This bands a user from the channel. Note: the ban is IP based and not nickname based.
+	  /mode +b <user>
+	  /mode -b <user>
+
++p  : If you set a channel +p operators can mark users as troll. They will have a prefix in front
+      of their name.
+         /mode +p <prefix>
+         /mode -p
+
++i  : The +i mode is set or unset for particular users. Making a user +i will mark him/her as a 
+      'troll' in a channel set +p. All messages from this users will have the prefix [Troll]_.
+         /mode +i <user>
+         /mode -i <user>
+
++c  : /mode -c disables colored text support for a user. /mode +c enables it. Every user can 
+      use this command. It only changes the settings for the user that uses it.        
+
+Other commands:
++++++++++++++++
+
+Required arguments are enclosed with <>
+Optional arguments are enclosed with []
+
+/kick <user> [reason]	: kicks the a user from a channel.
+
+/topic <topic>	: set the room topic
+
+/motd <motd>    : set the room's motd (message of the day)
+
+Topic and Motd may contain these variables:
+%NAME%, %IP%, %HOSTNAME%, %CLIENT%, %CLIENTVER%, %LINE%, %FILE%
+%TIME%, %DATE%, %USERS%, %ROOMNAME%, %WA-SONG%, %WA-ARTIST%, etc
+(see message tab in View->Options)
+
+/listbans   : lists all banned IP's/Users (user that are set +b)
+
+The following only work if the channels is set +e
+
+/exile <user> [reason] : redirects user to default target room
+/exileto <user> <target-room> [reason] : redirects a user to target-room. 
+
+
+Host only commands (type in server-console):
+++++++++++++++++++++++++++++++++++++++++++++
+
+help  : displays list of available commands
+
+host <ip> <port> <roomname>  : host a room on <ip> <port> with the name <roomname>
+
+redirect <targetroom>   : redirect everyone in the room to <targetroom> and close the channel
+
+channelname <new-name>  : rename the channel to <new-name>
+
+stop  : close the channel
+
+/say [/me] <message>  : send a message to the chat using the name of the god-user
+
+/impose <user> [/me] <message>  : send a message to the chat using any name
+
+STRG+S  : Save all settings of the channel
+
+STRG+O : Load settings from a configuration file
+
+

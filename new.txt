@@ -1,0 +1,19 @@
+6400]3E00]57 69 64 4D 58 20 42 65 75 61 20 43 68 61 74 5F 46 39 42 31 30 42 23 32 32 44 42 33 00]08 00] 18 A7 38 B8 71 00 00 00 00 42 65 74 61 2E 42 65 6E 64 65 72 38 31 38 5F 32 30 30 37 30 00
+
+///
+old userlist notification:
+0x006F][Username:N][00:1][IP-Address:4][UDP-Port:2][Line-Type:2][Shared-Files:4]
+
+new userlist notification:
+0x0072][Username:N][00:1][IP-Address:4][UDP-Port:2][Line-Type:2][Shared-Files:4][?:4]
+
+
+
+///
+old user-join  notification
+0x006E][Username:N][00:1][IP-Address:4][UDP-Port:2][Line-Type:2][Shared-Files:4]
+
+
+289 files
+0x0071]Name:N][00:1][IP-Address:4][UDP-Port:2][Line-Type:2][Shared-Files:4][?:4][REAL-IP:4]
+new user-join notification

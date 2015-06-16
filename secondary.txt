@@ -1,0 +1,155 @@
+WinMX Secondary Protocoll Reference
+
+No warranty for correctness of the information in this file.
+The filetransfer parts of the protocoll are not included in
+this file
+................
+
+
+
+Packet-Format:
+ID:2][LEN:2][PACKET:S:n
+
+
+
+
+----------------------------------------
+Connecting to the WinMX PeerCache Server
+----------------------------------------
+
+Frontcode Peercache Server	216.127.74.62
+Portrange 			7950 to 7952
+
+0) Connect
+1) Recieve Login OK (0x0038)  (1 byte)
+2) Recieve Cryptkey ID 0x0054 (16 bytes)
+3) Recieve Free Primary nodes (132 bytes)
+4) Disconnect
+
+typedef struct TAG_PARENTNODEINFO {
+
+  DWORD dwNodeIP;		
+  WORD wUDPPort;		
+  WORD wTCPPort;		
+  BYTE bFreePri;		
+  BYTE bFreeSec;		
+  WORD wReserved;
+} PARENTNODEINFO, *PPARENTNODEINFO;
+
+------------
+
+
+----------------------
+Parent Node 
+----------------------
+
+Send Userinfo
+
+0x03E9][NAME:S:n][0:00][Linetype:2][Transferport:2
+
+------------
+
+Userinfo Acknowlegded
+
+0x0460][Client-ID:2
+
+------------
+
+Send Queue Status
+
+0x0384][QueueStatus:S:n
+
+Queuestatus is either
+
+"9000  N of 1 available"
+
+of
+
+"9000 N in queue (X of Y available)"
+
+
+------------
+
+Request Roomlist
+
+0x238D][0:00
+
+------------
+
+Recieve Roomlist entry
+
+0x238E][Num-Users:4][Max-User:4][Roomname:S:n][Topic:S:n
+
+------------
+
+Send PM
+
+0x13EC][WinMX [HANDLE:S:12]][UserName:S:n][0:00][Message:S:n
+
+-----------
+
+Recieve PM
+
+0x13F6][ID:16][WinMX [HANDLE:S:12]][Name:S:n][Message:S:n
+
+-----------
+
+Send PM Acknowleged
+
+0x13ED][WinMX [HANDLE:S:12]][Name:S:n][ID:16]["SENT":4][0:00
+
+-----------
+
+Recieve PM Acknowlegded
+
+0x13ED][WinMX [HANDLE:S:12]][Name:S:n][ID:16]["SENT":4][0:00
+
+-----------
+
+Send Whois Request
+
+0x1389][WinMX [HANDLE:S:12]][Username:S:n][0:00
+
+-----------
+
+Whois Answer
+
+0x138A][WinMX [HANDLE:S:12]][NAME:S:n][00:1][LINE:W:2][ONLINE:D:4][FILES:D:4][QUEUE:S:S:n][00:1]
+
+-----------
+
+Whois Failed (user offline/switched host)
+
+0x138B][WinMX [HANDLE:S:12]][NAME:S:n][00:1]
+
+-----------
+
+Browse Request
+
+0x1B59][WinMX [HANDLE:S:12]][Name:S:n]
+
+-----------
+
+Browse entry
+
+0x1BBC][WinMX [HANDLE:S:12]][NAME:S:n][0:00][FILENAME:N][0:00][HASH:20][FILESIZE:4][0:00]MP3BITRATE:2|SMPLFREQ:2|0:00|PLAYBCKTIME:4]]
+
+-----------
+
+Browse finished (no error)
+
+0x1BC6][WinMX HANDLE:S:12]][NAME:S:n]
+
+----------
+
+Browse error (user offline/switched host)
+
+0x1BD0][WinMX HANDLE:S:12]][NAME:S:n]
+
+----------
+
+Send Shared Folder
+
+0x0FA3][Foldername:S:n][[HASH:20][FILESIZE:4][BITRATE:2][SAMPLERATE:4][TIME:4]:N-Times]
+
+----------

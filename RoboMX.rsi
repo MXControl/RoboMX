@@ -1,0 +1,12 @@
+[Server]
+Name=MXControl
+Topic=RoboMX / Metis / Shareguard +++ http://mxcontrol.sourceforge.net +++
+Motd=+++   %DATE%   +++   %TIME% +++\nWelcome to MXControl, %NAME%\nYou are connected from '%HOSTNAME%' using %CLIENT% %CLIENTVER%\nEnglish only, no uninvited PM's no advertising.\nEnjoy your stay :-)
+ChannelModes=1077952512
+Limit=600
+IP=16777343
+Port=6699
+Exile=
+TrollPrefix=_IDIOT_
+[Banned Users]
+Count=0

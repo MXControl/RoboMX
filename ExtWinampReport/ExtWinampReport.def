@@ -1,0 +1,6 @@
+; ExtWinampReport.def : Declares the module parameters for the DLL.
+
+LIBRARY      "gen_ExtWinampReport"
+
+EXPORTS
+	winampGetGeneralPurposePlugin @1
